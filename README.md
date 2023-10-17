@@ -10,4 +10,7 @@ The LACCPass Client component allows Ministries of Health to handle the onboardi
 - Internet access
 - [Postman](https://www.postman.com/) software to interact with APIs
 
+### Verify Service availability
+1. Running the lacpass-lacchain component from IPS-national-backend will expose the service at port 3010
+2. Verify the lacpass-lacchain component is running either checking the logs or just performing a telnet command in a bash shell:
 
