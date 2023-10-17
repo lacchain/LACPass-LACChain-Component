@@ -14,3 +14,15 @@ The LACCPass Client component allows Ministries of Health to handle the onboardi
 1. Running the lacpass-lacchain component from IPS-national-backend will expose the service at port 3010
 2. Verify the lacpass-lacchain component is running either checking the logs or just performing a telnet command in a bash shell:
 
+![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/telnet3010.png)
+
+### Running Setup
+
+It is time to run the CLI (Client helper executable script) to setup your DID and set some keys.
+1. Make sure you have verified the service availability as described in the previous section
+2. Before running the CLI make sure to execute this in a linux bash terminal:
+
+
+
+
+Onboard steps
