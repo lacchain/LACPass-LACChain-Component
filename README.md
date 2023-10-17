@@ -24,4 +24,15 @@ Now run the CLI (Client helper executable script) to setup your DID and set some
 
 `$ ./client-helper.sh`
 
+3. Now enter the URL of the lacpass-lacchain verified in the previous section as shown in the following prompt
+
+
+![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/apiURL.png)
+
+4. The following menu is presented:
+
+
+![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/CLIMainMenu.png)
+
+
 Onboard steps
