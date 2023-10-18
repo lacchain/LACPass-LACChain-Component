@@ -12,7 +12,7 @@ The LACCPass Client component allows Ministries of Health to handle the onboardi
 
 ### Verify Service availability
 1. Running the lacpass-lacchain component from IPS-national-backend will expose the service at port 3010
-2. Verify the lacpass-lacchain component is running either checking the logs or just performing a telnet command in a bash shell:
+2. Verify the lacpass-lacchain component is running either checking the logs or just running a telnet command in a bash shell:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
@@ -35,4 +35,14 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-Onboard steps
+## Onboarding options
+
+### Countries with Public Key Infrastructure (PKI)
+If your organization has a Public Key Infrastructure in place , the onboarding option only requires creating a DID 
+
+
+### Countries without Public Key Infrastructure (PKI)
+If your Health organization doesn't have a Public Key Infrastructure in place
+
+
+
