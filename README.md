@@ -18,7 +18,7 @@ The LACCPass Client component allows Ministries of Health to handle the onboardi
 
 ### Running Setup
 
-Now run the CLI (Client helper executable script) to setup your DID and set some keys.
+Now run the CLI (Client helper executable script) to setup your decentralized identifier [DID](https://w3c.github.io/did-core) DID and set some keys.
 1. Make sure you have verified the service availability as described in the previous section
 2. Before running the CLI make sure to execute this in a linux bash terminal:
 
