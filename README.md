@@ -18,8 +18,8 @@ The LACCPass Client component allows Ministries of Health to handle the onboardi
 
 ### Running Setup
 
-Now run the CLI (Client helper executable script) to setup your decentralized identifier [DID](https://w3c.github.io/did-core) DID and set some keys.
-1. Make sure you have verified the service availability as described in the previous section
+Now run the CLI (Client helper executable script) to setup your decentralized identifier [DID](https://w3c.github.io/did-core) and set some keys.
+1. Make sure you have verified the service availability as described in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Before running the CLI make sure to execute this in a linux bash terminal:
 
 `$ ./client-helper.sh`
