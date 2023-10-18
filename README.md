@@ -24,7 +24,7 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 
 `$ ./client-helper.sh`
 
-3. Now enter the URL of the lacpass-lacchain verified in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component# as shown in the following prompt
+3. Now enter the URL of the lacpass-lacchain verified in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) as shown in the following prompt
 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/apiURL.png)
