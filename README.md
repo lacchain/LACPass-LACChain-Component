@@ -24,7 +24,7 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 
 `$ ./client-helper.sh`
 
-3. Now enter the URL of the lacpass-lacchain verified in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) as shown in the following prompt
+3. Now enter the URL of the lacpass-lacchain verified in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) as shown in the following prompt:
 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/apiURL.png)
@@ -35,14 +35,34 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-## Onboarding options
+## Onboarding Health organizations 
+
+To onboard your country's health organization in the LACPass-LACChain trust network please follow the following steps.
 
 ### Countries with Public Key Infrastructure (PKI)
-If your organization has a Public Key Infrastructure in place , the onboarding option only requires creating a DID 
-
+If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
 
 ### Countries without Public Key Infrastructure (PKI)
-If your Health organization doesn't have a Public Key Infrastructure in place
+If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
+
+In the CLI Main Menu type 'SSC' and enter the requested information. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
+
+
+
+
+
+- The end of this process will create a subdirectory named `/certs` inside the directory you are running the script:
+
+
+![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/certsDir.png)
+
+
+
+
+
+
 
 
 
