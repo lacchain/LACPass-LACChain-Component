@@ -43,11 +43,19 @@ To onboard your country's health organization in the LACPass-LACChain trust netw
 If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
 
 ### Countries without Public Key Infrastructure (PKI)
-If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
+If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
 
-In the CLI Main Menu type 'SSC' and enter the requested information. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
+In the CLI Main Menu type 'SSC' and enter the requested information. 
+
+The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
+
+Next, enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (e.g. https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
+
+
 
 
 
