@@ -57,7 +57,9 @@ Now you may enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) fro
 
 Next, enter your Health organization name (for example: Ministry of Health of Peru) 
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HeatlhOrganization.png)
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
+
+
 
 
 
