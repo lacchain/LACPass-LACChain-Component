@@ -51,9 +51,13 @@ The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
 
-Next, enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (e.g. https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
+Now you may enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (for example: https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
+
+Next, enter your Health organization name (for example: Ministry of Health of Peru) 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HeatlhOrganization.png)
 
 
 
