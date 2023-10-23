@@ -55,15 +55,15 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 
-3. Next, enter your Health organization name (for example: Ministry of Health of Peru) as shown:
+3. Next step, enter your Health organization name (for example: Ministry of Health of Peru) as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
 
-4. Once completed the previous step, The script will ask you to enter a common nane for your Health organization (for example: Peru_MoH), or you may press enter to skip this step:
+4. Once completed the previous step, you will be asked to enter a common nane for your Health organization (for example: Peru_MoH), or you may press enter to skip this step:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
 
-5. After completing these steps, the script will present the data specified for the self-signed certificate and ask you to confirm. Keep in mind that if a valid Country code wasn't specified you will probably get an error.
+5. After completing these steps, the data specified for the self-signed certificate will be displayed asking you to confirm. Note: Keep in mind that if a valid Country code wasn't specified you will probably get an error.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
 
