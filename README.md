@@ -47,7 +47,7 @@ If the Health organization of your Country doesn't have a Public Key Infrastruct
 
 In the CLI Main Menu type 'SSC' and enter the requested information: 
 
-1. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
+1. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the Health organization self-signed certificate:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
 
@@ -67,22 +67,13 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
 
+6. Once confirmed, the Self-Signed Certificate creation with the data is displayed:
 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
+7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories `/DSC` and `/SCA` containing:
 
-
-
-
-
-
-
-
-
-- The end of this process will create a subdirectory named `/certs` inside the directory you are running the script:
-
-
-![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/certsDir.png)
-
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
 
 
