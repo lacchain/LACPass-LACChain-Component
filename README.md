@@ -89,7 +89,7 @@ If the Health organization of your Country has a Public Key Infrastructure in pl
 
 ## Onboarding Health organizations process
 
-Once your Country Health Organization has their PKI X.509 certificates, please follow this steps to complete the onboarding process of your Health organization in the LACPass trust network:
+Using your Country Health Organization PKI X.509 certificates, please follow this steps to onboard your Health organization in the LACPass trust network:
 
 1. Create a decentralized identifier [DID](https://w3c.github.io/did-core) typing 'CD' in the CLI Main Menu:
 
@@ -99,12 +99,19 @@ and a DID will be created and saved in a `did.txt` file:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didtxtfile.png)
 
-2. The next step is to associate the DID created in the previous step with the X.509 Certificate that will be used to sign Health certificates, type 'AX' in the CLI Main Menu and enter the path where the X.509 certificate is located. (If you created a self-signed certficate the path would be as in step 7: 
-
+2. The next step is to associate the DID created in the previous step with the X.509 Certificate that will be used to sign Health certificates, type 'AX' in the CLI Main Menu and enter the path where the X.509 certificate is located. (If you created a self-signed certficate the path would be as in step 7): 
+    
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509path.png)
 
+After entering the appropriate path you should get a successful message, inidcating the X.509 certificate was successfully associated with the DID:
 
-After 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didx509association.png)
+
+
+
+
+
+
 
 
 
