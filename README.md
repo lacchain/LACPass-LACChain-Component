@@ -35,12 +35,9 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-## Onboarding Health organizations 
+## Onboarding Health organizations in the LACPass trust network 
 
-To onboard your country's health organization in the LACPass-LACChain trust network please follow the following steps.
-
-### Countries with Public Key Infrastructure (PKI)
-If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
+To onboard your country's health organization in the LACPass-LACChain trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
 
 ### Countries without Public Key Infrastructure (PKI)
 If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
@@ -84,6 +81,24 @@ The Document Signer Certificates `/DSC` subdirectory contains three files:
 `DSC.key` is the private key used to sign Health Certificates, if your Health organization will use this key (optional), please complete these steps:
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
 - Rename the new copy of `DSC.crt` to `priv.pem`
+
+Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
+
+### Countries with Public Key Infrastructure (PKI)
+If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
+
+## Onboarding Health organizations process
+
+Once your Country Health Organization has their PKI X.509 certificates, please follow this steps to complete the onboarding process of your Health organization in the LACPass trust network:
+
+1. Create a decentralized identifier [DID](https://w3c.github.io/did-core) typing 'CD' in the CLI Main Menu:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLICreateDID.png) 
+
+and a DID will be created and saved in a `did.txt` file: 
+
+![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/didtxtfile.png)
+
 
 
 
