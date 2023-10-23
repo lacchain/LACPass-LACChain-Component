@@ -1,8 +1,8 @@
 # LACPass-LACChain-Component 
 
-## Manual Summary
+## Summary
 
-The LACCPass Client component allows Ministries of Health to handle the onboarding, as well as the issuance and delivery of health certificates to patients. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
+The LACCPass-LACChain component allows Ministries of Health or Health Organizations to handle the onboarding on the LACPass trust network, enabling the issuance and delivery of health certificates to patients or individuals. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
 ### Requirements
 - Make sure you have up and running and instance of the LACPass Client component available at https://github.com/lacchain/IPS-national-backend
@@ -43,21 +43,32 @@ To onboard your country's health organization in the LACPass-LACChain trust netw
 If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
 
 ### Countries without Public Key Infrastructure (PKI)
-If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
+If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
 
-In the CLI Main Menu type 'SSC' and enter the requested information. 
+In the CLI Main Menu type 'SSC' and enter the requested information: 
 
-The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
+1. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the self-signed certificate:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
 
-Now you may enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (for example: https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
+2. Now you may enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (for example: https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 
-Next, enter your Health organization name (for example: Ministry of Health of Peru) 
+3. Next, enter your Health organization name (for example: Ministry of Health of Peru) as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
+
+4. Once completed the previous step, The script will ask you to enter a common nane for your Health organization (for example: Peru_MoH), or you may press enter to skip this step:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
+
+5. After completing these steps, the script will present the data specified for the self-signed certificate and ask you to confirm. Keep in mind that if a valid Country code wasn't specified you will probably get an error.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
+
+
+
 
 
 
