@@ -97,7 +97,7 @@ Once your Country Health Organization has their PKI X.509 certificates, please f
 
 and a DID will be created and saved in a `did.txt` file: 
 
-![](https://github.com/lacchain/LACPass-client/blob/master/docs/examples/didtxtfile.png)
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/master/docs/examples/didtxtfile.png)
 
 
 
