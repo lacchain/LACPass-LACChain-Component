@@ -75,16 +75,19 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
-The Document Signer Certificates `/DSC` subdirectory contains three files: 
+The Document Signer Certificates `/DSC` subdirectory contains three files:
+
 `DSC.crt` is the X.509 certificate.
+
 `DSC.csr` is the Certificate Signing Request contains the public key and common name required by a Certificate Authority.
-`DSC.key` is the private key used to sign Health Certificates, to complete this step please:
+
+`DSC.key` is the private key used to sign Health Certificates, if your Health organization will use this key (optional), please complete these steps:
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
 - Rename the new copy of `DSC.crt` to `priv.pem`
 
-The Signing Certificate Authority  `/SCA` subdirectory contains two files:
-`SCA.crt` is the X.509 certificate.
-`SCA.key` is the private key used by the Signing Certificate Authority.
+
+
+
 
 
 
