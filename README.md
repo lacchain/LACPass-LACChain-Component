@@ -107,6 +107,15 @@ After entering the appropriate path you should get a successful message, inidcat
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didx509association.png)
 
+Note: the DID must remain the same for the association with the X.509 certificate to be valid.
+
+3. Afterwards, a DID manager must be created, type 'CM' in the CLI Main Menu and enter the number of days in which the manager will be considered valid, for example: 1000 days. Do not enter a number less than 365 days.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingManager.png)
+
+and a successful response will be displayed:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didManagerCreation.png)
 
 
 
