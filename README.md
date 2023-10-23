@@ -2,7 +2,7 @@
 
 ## Summary
 
-The LACCPass-LACChain component allows Ministries of Health or Health Organizations to handle the onboarding on the LACPass trust network, enabling the issuance and delivery of health certificates to patients or individuals. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
+The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
 ### Requirements
 - Make sure you have up and running and instance of the LACPass Client component available at https://github.com/lacchain/IPS-national-backend
@@ -43,7 +43,7 @@ To onboard your country's health organization in the LACPass-LACChain trust netw
 If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
 
 ### Countries without Public Key Infrastructure (PKI)
-If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
+If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
 
 In the CLI Main Menu type 'SSC' and enter the requested information: 
 
@@ -71,11 +71,22 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
-7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories `/DSC` and `/SCA` as displayed:
+7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories Document Signer Certificates `/DSC` and Signing Certificate Authority `/SCA` as displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
-The `/DSC` subdirectory contains three files, the `/SCA` subdirectory contains two files.
+The Document Signer Certificates `/DSC` subdirectory contains three files: 
+`DSC.crt` is the X.509 certificate.
+`DSC.csr` is the Certificate Signing Request contains the public key and common name required by a Certificate Authority.
+`DSC.key` is the private key used to sign Health Certificates, to complete this step please:
+Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
+Rename the new copy of DSC.crt to priv.pem
+
+The Signing Certificate Authority  `/SCA` subdirectory contains two files:
+
+`SCA.crt` is 
+`SCA.key` is the 
+
 
 
 
