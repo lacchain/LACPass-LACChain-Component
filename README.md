@@ -55,11 +55,11 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 
-3. Next step, enter your Health organization name (for example: Ministry of Health of Peru) as shown:
+3. Next step, enter your Health organization name (for example: Ministry of Health of Peru Demo Brasil) as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
 
-4. Once completed the previous step, you will be asked to enter a common nane for your Health organization (for example: Peru_MoH), or you may press enter to skip this step:
+4. Once completed the previous step, you will be asked to enter a common nane for your Health organization (for example: BrasilDemo_MoH), or you may press enter to skip this step:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
 
@@ -67,11 +67,11 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
 
-6. Once confirmed, the Self-Signed Certificate creation with the data is displayed:
+6. Once confirmed, the self signed certificate creation with the data is displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
-7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories `/DSC` and `/SCA` containing:
+7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories `/DSC` and `/SCA` :
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
