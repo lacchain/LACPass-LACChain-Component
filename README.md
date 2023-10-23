@@ -35,9 +35,9 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-## Onboarding Health organizations in the LACPass trust network 
+## Countries Health organizations in the LACPass trust network 
 
-To onboard your country's health organization in the LACPass-LACChain trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
+To onboard your country's health organization in the LACPass trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
 
 ### Countries without Public Key Infrastructure (PKI)
 If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
@@ -99,6 +99,12 @@ and a DID will be created and saved in a `did.txt` file:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didtxtfile.png)
 
+2. The next step is to associate the DID created in the previous step with the X.509 Certificate that will be used to sign Health certificates, type 'AX' in the CLI Main Menu and enter the path where the X.509 certificate is located. (If you created a self-signed certficate the path would be as in step 7: 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509path.png)
+
+
+After 
 
 
 
