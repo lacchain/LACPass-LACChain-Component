@@ -87,9 +87,9 @@ Once completed these steps You have successfully created a self-signed certifica
 ### Countries with Public Key Infrastructure (PKI)
 If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
 
-## Onboarding Health organizations process
+## Onboarding Health organizations setup process
 
-Using your Country Health Organization PKI X.509 certificates, please follow this steps to onboard your Health organization in the LACPass trust network:
+Using your Country Health Organization PKI X.509 certificates, please follow this steps for the onboard setup of your Health organization in the LACPass trust network:
 
 1. Create a decentralized identifier [DID](https://w3c.github.io/did-core) typing 'CD' in the CLI Main Menu:
 
@@ -117,7 +117,9 @@ and a successful response will be displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didManagerCreation.png)
 
-
+4. And, type 'exit' to end the onboard setup process.
+ 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/exit.png)
 
 
 
