@@ -160,7 +160,7 @@ c) Organization identifying information in a text file:
   i. Legal name
 
  ii. FHIR-URL
- 
+
 iii. Country/State code
 
 4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
@@ -188,11 +188,11 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
 ```
 
 Where:
-* bundle: FHIR bundle, just copy and paste the full FHIR bundle
-* IssuerDid: Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
-* receiverDid: This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique decentralized identifier (DID) after setting up their digital wallet available at https://lacpass-openprotest-wallet.lacchain.net/
+* **bundle:** FHIR bundle, just copy and paste the full FHIR bundle
+* **IssuerDid:** Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
+* **receiverDid:** This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique decentralized identifier (DID) after setting up their digital wallet available at https://lacpass-openprotest-wallet.lacchain.net/
 
-NOTE: A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
+**NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
 ### LACPass Verifier
 
@@ -201,7 +201,7 @@ LACPass Verifier is the last component used to verify DDCC-compliant health cert
 1. LACPass-front-verifier: This is a full front-end component that needs to be connected to LACPass-trusted-List to check the validity of health certificates. The repository is available at https://github.com/lacchain/LACPass-front-verifier
 2. LACPass-trusted-list: This is the backend API component which cryptographically verifies certificate issuers and decodes data returning it alongside the certificate health validity. Access to this repository is available at https://github.com/lacchain/LACPass-trusted-list
 
-NOTE: A fully runnning instance of LACPass Verifier can be found at https://lacpass.lacchain.net/
+**Note:** A fully runnning instance of LACPass Verifier can be found at https://lacpass.lacchain.net/
 
 
 
