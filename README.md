@@ -159,7 +159,7 @@ iii. Country/State code
 
 ## Sending Health certificates wrapped as Verifiable Credentials
 
-In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send healgh verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
+In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
 
 As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
 
@@ -173,7 +173,16 @@ Where:
 * IssuerDid: Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
 * receiverDid: This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique identifier (DID) after setting up the wallet available at https://lacpass-openprotest-wallet.lacchain.net/
 
+NOTE: A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
+### LACPass Verifier
+
+LACPass Verifier is the last component used to verify DDCC-compliant health certificates. This component is made up of two subcomponents:
+
+1. LACPass-front-verifier: This is a full front-end component that needs to be connected to LACPass-trusted-List to check the validity of health certificates. The repository is available at https://github.com/lacchain/LACPass-front-verifier
+2. LACPass-trusted-list: This is the backend API component which cryptographically verifies certificate issuers and decodes data returning it alongside the certificate health validity. Access to this repository is available at https://github.com/lacchain/LACPass-trusted-list
+
+NOTE: A fully runnning instance of LACPass Verifier can be found at https://lacpass.lacchain.net/
 
 
 
