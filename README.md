@@ -82,9 +82,9 @@ c) `DSC.key` is the private key used to sign Health Certificates, if your Health
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
 - Rename the new copy of `DSC.crt` to `priv.pem`
 
-The Signing Certificate Authority `/SCA` subdirectory contains three files
+The Signing Certificate Authority `/SCA` subdirectory contains two files
 
-a) `SCA.crt` is the Signing Certificate Authority X.509 certificate.
+a) `SCA.crt` is the X.509 certificate.
 
 b) `SCA.key` is the Signing Certificate Authority private key.
 
@@ -137,7 +137,7 @@ After completing the onboard setup process, the following information will be in
 Now you are ready to share the onboarding information with the committee, please follow these steps:
 
 1. Start the CLI again.
-2. Type 'GCM' (Get Current Manager) to fetch the entity and manager details as shown:
+2. Type 'GCM' (Get Current Manager) **to fetch the entity and manager details** as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
 
@@ -149,17 +149,31 @@ a) `Entity-Manager-Details.txt` file
 
 b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
 
-c) Organization identifying information:
+c) Organization identifying information in a text file:
 
   i. Legal name
-
  ii. FHIR-URL
-
 iii. Country/State code
 
-4. Sent the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
+4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
 
 ## Sending Health certificates wrapped as Verifiable Credentials
+
+In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send healgh verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
+
+As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
+
+* Method: POST
+* http://localhost:3010/api/v1/verifiable-credential/ddcc/send (update the host properly in case you are not accessing via localhost)
+* The required payload to send has the following structure:
+
+
+Where:
+* bundle: FHIR bundle, just copy and paste the full FHIR bundle
+* IssuerDid: Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
+* receiverDid: This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique identifier (DID) after setting up the wallet available at https://lacpass-openprotest-wallet.lacchain.net/
+
+
 
 
 
