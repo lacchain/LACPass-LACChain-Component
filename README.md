@@ -175,14 +175,14 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
 
 ```javascript
  { 
-   "bundle":
-           {
-             "entry": 
-              ["string"]		
-             },
-      "issuerDid": "string",
-      "receiverDid": "string"
-    }
+  "bundle":
+          {
+            "entry": 
+             ["string"]		
+          },
+   "issuerDid": "string",
+   "receiverDid": "string"
+ }
 ```
 
 Where:
