@@ -158,7 +158,9 @@ b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA
 c) Organization identifying information in a text file:
 
   i. Legal name
+
  ii. FHIR-URL
+ 
 iii. Country/State code
 
 4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
