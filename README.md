@@ -167,11 +167,20 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
 * http://localhost:3010/api/v1/verifiable-credential/ddcc/send (update the host properly in case you are not accessing via localhost)
 * The required payload to send has the following structure:
 
+	{ 
+	 "bundle":
+			{
+			 "entry": 
+			  ["string"]		
+			},
+	 "issuerDid": "string",
+	 "receiverDid": "string"
+	}
 
 Where:
 * bundle: FHIR bundle, just copy and paste the full FHIR bundle
 * IssuerDid: Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
-* receiverDid: This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique identifier (DID) after setting up the wallet available at https://lacpass-openprotest-wallet.lacchain.net/
+* receiverDid: This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique decentralized identifier (DID) after setting up their digital wallet available at https://lacpass-openprotest-wallet.lacchain.net/
 
 NOTE: A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
