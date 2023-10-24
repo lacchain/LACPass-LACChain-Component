@@ -52,15 +52,15 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 
-3. Next step, enter your Health organization name (for example: Ministry of Health of Peru Demo Brasil) as shown:
+3. Next, enter your Health organization name (for example: Ministry of Health of Peru Demo Brasil) as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
 
-4. Once completed the previous step, you will be asked to enter a common nane for your Health organization (for example: BrasilDemo_MoH), or you may press enter to skip this step:
+4. Next step, you will be asked to enter a common nane for your Health organization (for example: BrasilDemo_MoH), or you may press enter to skip this step:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
 
-5. After completing these steps, the data specified for the self-signed certificate will be displayed asking you to confirm. Note: Keep in mind that if a valid Country code wasn't specified you will probably get an error.
+5. After completing these steps, the data specified for the self-signed certificate will be displayed asking you to confirm. **Note:** Keep in mind that if a valid Country code wasn't specified you will probably get an error.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
 
@@ -113,7 +113,7 @@ After entering the appropriate path you should get a successful message, inidcat
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didx509association.png)
 
-Note: the DID must remain the same for the association with the X.509 certificate to be valid.
+**Note:** the DID must remain the same for the association with the X.509 certificate to be valid.
 
 3. Afterwards, a DID manager must be created, type 'CM' in the CLI Main Menu and enter the number of days in which the manager will be considered valid, for example: 1000 days. Do not enter a number less than 365 days.
 
