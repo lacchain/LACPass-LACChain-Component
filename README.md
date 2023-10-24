@@ -84,8 +84,9 @@ c) `DSC.key` is the private key used to sign Health Certificates, if your Health
 
 The Signing Certificate Authority `/SCA` subdirectory contains three files
 
-a) **
-b) **
+a) `SCA.crt` is the Signing Certificate Authority X.509 certificate.
+
+b) `SCA.key` is the Signing Certificate Authority private key.
 
 Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
 
@@ -145,11 +146,16 @@ Copy the content in a text file and name the file something like `Entity-Manager
 3. Pack the following infromation in a zip file:
 
 a) `Entity-Manager-Details.txt` file
+
 b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
+
 c) Organization identifying information:
- i. Legal name
+
+  i. Legal name
+
  ii. FHIR-URL
- iii. Country/State code
+
+iii. Country/State code
 
 4. Sent the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
 
