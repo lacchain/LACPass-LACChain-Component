@@ -11,14 +11,15 @@ The LACCPass-LACChain component enables Health Ministries or Health Organization
 - [Postman](https://www.postman.com/) software to interact with APIs
 
 ### Verify Service availability
-1. Running the lacpass-lacchain component from IPS-national-backend will expose the service at port 3010
+1. Running the lacpass-lacchain component from IPS-national-backend with the following command: 
 
 `bash client-helper.sh` 
 
+will expose the service at port 3010
+
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/client-helper.png)
 
-
-2. Verify the lacpass-lacchain component is running either checking the logs or just running a telnet command in a bash shell:
+2. Verify the lacpass-lacchain component is running either checking the logs or just running a telnet command with the proper URL in a bash shell:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
