@@ -35,7 +35,7 @@ Now run the CLI (Client helper executable script) to setup your decentralized id
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-## Countries Health organizations in the LACPass trust network 
+## Health organizations onboard to the LACPass trust network 
 
 To onboard your country's health organization in the LACPass trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
 
@@ -91,7 +91,7 @@ b) `SCA.key` is the Signing Certificate Authority private key.
 Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
 
 ### Countries with Public Key Infrastructure (PKI)
-If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding steps will require to use your existing X.509 certificate to complete the onboarding process. 
+If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding process will require to use your existing X.509 certificate to complete the onboarding process. 
 
 ## Onboard health organizations setup process
 
