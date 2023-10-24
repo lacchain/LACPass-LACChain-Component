@@ -82,6 +82,11 @@ c) `DSC.key` is the private key used to sign Health Certificates, if your Health
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
 - Rename the new copy of `DSC.crt` to `priv.pem`
 
+The Signing Certificate Authority `/SCA` subdirectory contains three files
+
+a) **
+b) **
+
 Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
 
 ### Countries with Public Key Infrastructure (PKI)
@@ -134,6 +139,21 @@ Now you are ready to share the onboarding information with the committee, please
 2. Type 'GCM' (Get Current Manager) to fetch the entity and manager details as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
+
+Copy the content in a text file and name the file something like `Entity-Manager-Details.txt`.
+
+3. Pack the following infromation in a zip file:
+
+a) `Entity-Manager-Details.txt` file
+b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
+c) Organization identifying information:
+ i. Legal name
+ ii. FHIR-URL
+ iii. Country/State code
+
+4. Sent the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
+
+## Sending Health certificates wrapped as Verifiable Credentials
 
 
 
