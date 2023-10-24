@@ -173,15 +173,17 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
 * http://localhost:3010/api/v1/verifiable-credential/ddcc/send (update the host properly in case you are not accessing via localhost)
 * The required payload to send has the following structure:
 
-`{ 
+```javascript
+ { 
    "bundle":
-             {
-              "entry": 
-               ["string"]		
+           {
+             "entry": 
+              ["string"]		
              },
       "issuerDid": "string",
       "receiverDid": "string"
-    }`
+    }
+```
 
 Where:
 * bundle: FHIR bundle, just copy and paste the full FHIR bundle
