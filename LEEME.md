@@ -1,74 +1,76 @@
 # LACPass-LACChain-Component 
 
-## Summary
+## Resumen
 
-The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
+El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud a gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 
-### Requirements
-- Make sure you have up and running and instance of the LACPass Client component available at https://github.com/lacchain/IPS-national-backend
-- Access to the client-helper executable script available at https://github.com/lacchain/IPS-national-backend#lacchain-setup-and-onboard-helper
-- Internet access
-- [Postman](https://www.postman.com/) software to interact with APIs
 
-### Verify Service availability
-1. Running the lacpass-lacchain component from `IPS-national-backend` will expose the service at port 3010.
-2. Verify the lacpass-lacchain component is running either checking the logs or just running a telnet command with the proper URL in a bash shell:
+### Requerimientos 
+- Contar con una instancia en ejecución del componente LACPass-LACChain parte del `IPS-national-backend` disponible en https://github.com/lacchain/IPS-national-backend
+- Acceso al script ejecutable `client-helper` disponible en https://github.com/lacchain/IPS-national-backend#lacchain-setup-and-onboard-helper
+- Acceso a Internet
+- Software [Postman](https://www.postman.com/) para interactuar con APIs
+
+### Verificar la disponibilidad del servicio
+1. Al ejecutar el componente lacpass-lacchain desde `IPS-national-backend` el servicio queda expuesto en el puerto 3010. 
+2. Para verificar la ejecución del componente lacpass-lacchain puede revisar el log o ejecutar el comando el comando telnet en un shell bash con el URL apropiado:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
-### Running Setup
+### Proceso de configuración
 
-Now run the CLI (Client helper executable script) to setup your decentralized identifier [DID](https://w3c.github.io/did-core) and set some keys.
-1. Make sure you have verified the service availability as described in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
-2. Before running the CLI make sure to execute this in a linux bash terminal:
+Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el CLI (script ejecutable `client-helper`).
+1. Una vez verificada la disponibilidad del servicio segín la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
+2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:
 
 ```
 $ chmod +x client-helper.sh
 $ bash client-helper.sh
 ```
-3. Now enter the URL of the lacpass-lacchain verified in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) as shown in the following prompt:
+
+3. Ahora ingrese el URL del servicio lacpass-lacchain verificado en la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) como se muestra en el siguiente prompt:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/apiURL.png)
 
-4. The CLI (Command Line Interface) Main Menu is presented:
+4. A continuación se presenta el siguiente Menú Principal del CLI:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
 
-## Onboarding Health organizations to the LACPass trust network 
+## Incorporación de organizaciones de Salud en la red de confianza LACPass 
 
-To onboard your country's health organization in the LACPass trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
+Para incorporar la organización de salud de su país debe verificar si su organización de salud cuenta con una Infraestructura de Llave Pública implementada, y revise las siguientes opciones.
 
-### Countries without Public Key Infrastructure (PKI)
-If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
+### Países sin Infraestructura de Llave Pública (PKI)
+Si la organización de salud de su País no tiene implementada una Infraestructura de Llave Pública, se le pedirá la creación de un certificado auto-firmado (en inglés Self-Signed Certificate [SSC]) con los siguientes pasos.
 
-In the CLI Main Menu type 'SSC' and enter the requested information: 
+En el Menú Principal del CLI tipee 'SSC' e ingrese la información requerida: 
 
-1. The first step is entering the [Country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the Health organization self-signed certificate:
+1. El primer paso es ingresar el [Código de País](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) para el certificado auto-firmado de su organización de salud:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
 
-2. Now you may enter the [State code](https://en.wikipedia.org/wiki/ISO_3166-2) from the selected Country (for example: https://en.wikipedia.org/wiki/ISO_3166-2:BR if the country were Brazil), or you may press enter to skip this step:
+2. Ahora puede ingrear el [Código de Estado](https://en.wikipedia.org/wiki/ISO_3166-2) del país seleccionado (por ejemplo: https://en.wikipedia.org/wiki/ISO_3166-2:BR si el país es Brasil), o puede presionar enter para saltar este paso:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 
-3. Next, enter your Health organization name (for example: Ministry of Health of Peru Demo Brasil) as shown:
+3. A continuación, ingrese el nombre de su organización de Salud (por ejemplo: Ministerio de Salud de Peru Demo Brasil) como se muestra:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
 
-4. Next step, you will be asked to enter a common name for your Health organization (for example: BrasilDemo_MoH), or you may press enter to skip this step:
+4. El próximo paso, debe ingresar un nombre común (Common Name) para su organización de Salud (por ejemplo: BrasilDemo_MoH), o puede presionar enter y omitir este paso:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
 
-5. After completing these steps, the data specified for the self-signed certificate will be displayed asking you to confirm. **Note:** Keep in mind that if a valid Country code wasn't specified you will probably get an error.
+5. Una vez completados estos pasos, los datos especificados para el certificado auto-firmado serán desplegados solicitando su confirmación. **Nota:** Tenga en mente que si no se especificó un Código de País válido, probablemente tenga un error.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
 
-6. Once confirmed, the self-signed certificate creation with the data is displayed:
+6. Una vez confirmado, la creación de certificado auto-firmado y los datos son desplegados:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
-7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories **Document Signer Certificates** `/DSC` and **Signing Certificate Authority** `/SCA` as displayed:
+7. Un subdirectorio con nombre `/certs` es creado dentro del directorio donde está ejecutando el script, con dos subdirectorios **Document Signer Certificates** `/DSC` y **Signing Certificate Authority** `/SCA` como se muestra:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
@@ -130,7 +132,7 @@ and a successful response will be displayed:
 After completing the onboard setup process, the following information will be in the `lacchain-setup-helper` directory:
 
 - A `did.txt` file containing the decentralized identifier (DID) of your organization, have it handy in case you need to access the DID.
-- The `/certs` directory containing the `/DSC` and `/SCA` subdirectories.
+- The `/certs` directory containing the `\DSC` and `\SCA` subdirectories.
 
 ## Sharing the information for onboarding the trust network
 
@@ -147,19 +149,19 @@ Copy the content in a text file and name the file something like `Entity-Manager
 
 a) `Entity-Manager-Details.txt` file
 
-b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt`  **Note:** if your Health organization has a Public Key Infrastructure in place, you may not include this file.  
+b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
 
 c) Organization identifying information in a text file:
 
-```
   i. Legal name
+
  ii. FHIR-URL
+
 iii. Country/State code
-``` 
 
 4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
 
-## Sending Health certificates wrapped as Verifiable Credentials
+## Enviando certificados de Salud contenidos en Credenciales Verificables
 
 In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
 
