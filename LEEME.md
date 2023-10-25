@@ -4,7 +4,6 @@
 
 El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud a gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 
-
 ### Requerimientos 
 - Contar con una instancia en ejecución del componente LACPass-LACChain parte del `IPS-national-backend` disponible en https://github.com/lacchain/IPS-national-backend
 - Acceso al script ejecutable `client-helper` disponible en https://github.com/lacchain/IPS-national-backend#lacchain-setup-and-onboard-helper
@@ -32,10 +31,9 @@ $ bash client-helper.sh
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/apiURL.png)
 
-4. A continuación se presenta el siguiente Menú Principal del CLI:
+4. A continuación se presenta el Menú Principal del CLI (CLI Main Menu):
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
-
 
 ## Incorporación de organizaciones de Salud en la red de confianza LACPass 
 
@@ -74,26 +72,26 @@ En el Menú Principal del CLI tipee 'SSC' e ingrese la información requerida:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
-The Document Signer Certificates `/DSC` subdirectory contains three files:
+El subdirectorio Document Signer Certificates `/DSC` contiene tres archivos:
 
-a) `DSC.crt` is the X.509 certificate.
+a) `DSC.crt` es el certificado X.509.
 
-b) `DSC.csr` is the Certificate Signing Request contains the public key and common name required by a Certificate Authority.
+b) `DSC.csr` es el Certificate Signing Request que contiene la llave pública y el nombre común requerido por una Autoridad Certificadora.
 
-c) `DSC.key` is the private key used to sign Health Certificates, if your Health organization will use this key (optional), please complete these steps:
-- Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
-- Rename the new copy of `DSC.crt` to `priv.pem`
+c) `DSC.key` es la llave privada usada para firmar los Certificados de Salud, si su organización de Salud usará esta llave (opcional), por favor complete estos pasos:
+- Copie el archivo `DSC.key` dentro del directorio `cert-data` localizado en el directorio raíz de su repositorio `IPS-national-backend`.
+- Renombre la nueva copia de `DSC.crt` a `priv.pem`
 
-The Signing Certificate Authority `/SCA` subdirectory contains two files
+El subdirectorio Signing Certificate Authority `/SCA` contiene dos archivos:
 
-a) `SCA.crt` is the X.509 certificate.
+a) `SCA.crt` es el certificado X.509.
 
-b) `SCA.key` is the Signing Certificate Authority private key.
+b) `SCA.key` es la llave privada de la Autoridad Certificadora que firma.
 
-Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
+Una vez completado estos pasos habrá creado exitosamente un certificado auto-firmado para la organización de Salud de su País.
 
-### Countries with Public Key Infrastructure (PKI)
-If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding process will require to use your existing X.509 certificate to complete the onboarding process. 
+### Países con Infraestructura de Llave Pública (PKI)
+Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 prra completar el proceso. 
 
 ## Onboard health organizations setup process
 

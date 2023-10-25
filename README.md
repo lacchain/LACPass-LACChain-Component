@@ -82,13 +82,13 @@ c) `DSC.key` is the private key used to sign Health Certificates, if your Health
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
 - Rename the new copy of `DSC.crt` to `priv.pem`
 
-The Signing Certificate Authority `/SCA` subdirectory contains two files
+The Signing Certificate Authority `/SCA` subdirectory contains two files:
 
 a) `SCA.crt` is the X.509 certificate.
 
 b) `SCA.key` is the Signing Certificate Authority private key.
 
-Once completed these steps You have successfully created a self-signed certificate (SSC) for your Country's Health organization.
+Once completed these steps you have successfully created a self-signed certificate (SSC) for your Country's Health organization.
 
 ### Countries with Public Key Infrastructure (PKI)
 If the Health organization of your Country has a Public Key Infrastructure in place, the onboarding process will require to use your existing X.509 certificate to complete the onboarding process. 
