@@ -40,7 +40,7 @@ $ bash client-helper.sh
 To onboard your country's health organization in the LACPass trust network please verify if your health organization has a Public Key Infrastructure in place, and review the following options. 
 
 ### Countries without Public Key Infrastructure (PKI)
-If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows:
+If the Health organization of your Country doesn't have a Public Key Infrastructure in place, you will be asked to create an X.509 self-signed certificate (SSC) as follows.
 
 In the CLI Main Menu type 'SSC' and enter the requested information: 
 
@@ -68,7 +68,7 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
-7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories Document Signer Certificates `/DSC` and Signing Certificate Authority `/SCA` as displayed:
+7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories **Document Signer Certificates** `/DSC` and **Signing Certificate Authority** `/SCA` as displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
@@ -130,7 +130,7 @@ and a successful response will be displayed:
 After completing the onboard setup process, the following information will be in the `lacchain-setup-helper` directory:
 
 - A `did.txt` file containing the decentralized identifier (DID) of your organization, have it handy in case you need to access the DID.
-- The `/certs` directory containing the `\DSC` and `\SCA` subdirectories.
+- The `/certs` directory containing the `/DSC` and `/SCA` subdirectories.
 
 ## Sharing the information for onboarding the trust network
 
@@ -147,15 +147,15 @@ Copy the content in a text file and name the file something like `Entity-Manager
 
 a) `Entity-Manager-Details.txt` file
 
-b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
+b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt`  **Note:** if your Health organization has a Public Key Infrastructure in place, you may not include this file.  
 
 c) Organization identifying information in a text file:
 
+```
   i. Legal name
-
  ii. FHIR-URL
-
 iii. Country/State code
+``` 
 
 4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
 
