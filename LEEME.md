@@ -161,7 +161,8 @@ iii. Código de País/Estado
 
 4. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#sending-health-certificates-wrapped-as-verifiable-credentials)
+## Sending Health certificates wrapped as Verifiable Credentials
+
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
 
 En esta sección aprenderá a usar el endpoint expuesto por el componente lacpass-lacchain para enviar certificados de salud como [credenciales verificables](https://www.w3.org/TR/vc-data-model/). De haber completado satisfactoriamente los pasos previos, está listo para enviar certificados de salud a sus usuarios.
