@@ -18,7 +18,7 @@ El componente de software LACPass-LACChain permite a los Ministerios u Organizac
 
 ### Proceso de configuración
 
-Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el CLI (script ejecutable `client-helper`).
+Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el script ejecutable `client-helper`.
 1. Una vez verificada la disponibilidad del servicio segín la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:
 
@@ -93,7 +93,7 @@ Una vez completado estos pasos habrá creado exitosamente un certificado auto-fi
 ### Países con Infraestructura de Llave Pública (PKI)
 Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 prra completar el proceso. 
 
-## Proceso de configuración para incorporar organizaciones de salud en la red de confianza LACPass
+## Proceso de configuración para incorporar organizaciones de salud
 
 Usando los certificados PKI X.509 de la organización de Salud de su País, por favor siga los siguientes pasos para incorporar su organización de Salud en la red de confianza LACPass
 
@@ -132,7 +132,7 @@ se desplegará una respuesta exitosa:
 Una vez completado el proceso de configuración para la incorporación, la siguiente información estará en el directorio `lacchain-setup-helper`:
 
 - Un archivo `did.txt` que contiene el identificador decentralizado (DID) de su organización, manténgalo cerca por si requiere acceder al DID.
-- Un directorio `/certs` que contiene los subdirectorios `\DSC` y `\SCA`.
+- Un directorio `/certs` que contiene los subdirectorios `/DSC` y `/SCA`.
 
 ## Sharing the information for onboarding the trust network
 
