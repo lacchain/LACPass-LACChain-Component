@@ -5,8 +5,8 @@
 The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals. This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
 ### Requirements
-- Make sure you have up and running and instance of the LACPass Client component available at https://github.com/lacchain/IPS-national-backend
-- Access to the client-helper executable script available at https://github.com/lacchain/IPS-national-backend#lacchain-setup-and-onboard-helper
+- Make sure you have up and running and instance of the LACPass Client component available at https://github.com/RACSEL/IPS-national-backend
+- Access to the client-helper executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
 - Internet access
 - [Postman](https://www.postman.com/) software to interact with APIs
 
