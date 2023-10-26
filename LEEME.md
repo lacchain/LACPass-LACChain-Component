@@ -163,16 +163,15 @@ iii. Código de País/Estado
 
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
 
-In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users.
+En esta sección aprenderá a usar el endpoint expuesto por el componente lacpass-lacchain para enviar certificados de salud como [credenciales verificables](https://www.w3.org/TR/vc-data-model/). De haber completado satisfactoriamente los pasos previos, está listo para enviar certificados de salud a sus usuarios.
 
-En esta sección aprenderá a usar el endpoint expuesto por el componente lacpass-lacchain para enviar certificados de saludo como [credenciales verificables](https://www.w3.org/TR/vc-data-model/). 
+La sección [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#verificar-la-disponibilidad-del-servicio) describe que el componente `lacpass-lacchain` se ejecuta en el puerto 3010 por defecto. 
 
-
-As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
+Para enviar certificados de salud DDCCCoreDataSet puede usar la herramienta [Postman](https://www.postman.com/) con los siguientes parámetros:
 
 * Method: POST
-* http://localhost:3010/api/v1/verifiable-credential/ddcc/send (update the host properly in case you are not accessing via localhost)
-* The required payload to send has the following structure:
+* http://localhost:3010/api/v1/verifiable-credential/ddcc/send (en caso que no pueda acceder usando localhost por favor actualice apropiadamente)
+* El payload requerido para el envío de la credencial tiene la siguiente estructura:
 
 ```javascript
  { 
@@ -186,10 +185,10 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
  }
 ```
 
-Where:
-* **bundle:** FHIR bundle, just copy and paste the full FHIR bundle
-* **IssuerDid:** Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
-* **receiverDid:** This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique decentralized identifier (DID) after setting up their digital wallet available at https://lacpass-openprotest-wallet.lacchain.net/
+Donde:
+* **bundle:** bundle FHIR, únicamente copiar y pegar el bundle FHIR completo.
+* **IssuerDid:** DID del Emisor, este es el DID creado en la sección [Proceso de configuración para incorporar organizaciones de salud](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#proceso-de-configuraci%C3%B3n-para-incorporar-organizaciones-de-salud) en el paso 1 y se encuentra disponible en el archivo `lacchain-setup-helper/did.txt`.
+* **receiverDid:** DID del Receptor (el paciente/individuo que recibe el certificado) que debe compartir con Usted para recibir la credencial emitida en su billetera. Los individuos/pacientes pueden obtener su identificador decentralizado (DID) luego de registrar su billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/.
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
