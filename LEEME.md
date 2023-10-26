@@ -12,14 +12,14 @@ El componente de software LACPass-LACChain permite a los Ministerios u Organizac
 
 ### Verificar la disponibilidad del servicio
 1. Al ejecutar el componente lacpass-lacchain desde `IPS-national-backend` el servicio queda expuesto en el puerto 3010. 
-2. Para verificar la ejecución del componente lacpass-lacchain puede revisar el log o ejecutar el comando el comando telnet en un shell bash con el URL apropiado:
+2. Para verificar la ejecución del componente lacpass-lacchain puede revisar el log o ejecutar el comando telnet en un shell bash con el URL apropiado:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
 ### Proceso de configuración
 
 Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el script ejecutable `client-helper`.
-1. Una vez verificada la disponibilidad del servicio segín la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
+1. Una vez verificada la disponibilidad del servicio según la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:
 
 ```
@@ -136,7 +136,7 @@ Una vez completado el proceso de configuración para la incorporación, la sigui
 
 ## Compartir la información para incorporación en la red de confianza LACPass
 
-Ahora puede compartir la información de incorporación en la red de confianza con el comité, por favor siga los siguientes pasos:
+Ahora puede compartir con el comité la información para incorporación de su organización de salud en la red de confianza, por favor siga los siguientes pasos:
 
 1. Inicie el CLI nuevamente.
 2. Tipee 'GCM' (Get Current Manager) **para obtener los detalles de la entidad y el gestor** como se muestra:
