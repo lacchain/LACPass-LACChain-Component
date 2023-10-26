@@ -161,7 +161,7 @@ iii. Country/State code
 
 ## Sending Health certificates wrapped as Verifiable Credentials
 
-In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
+In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as [verifiable credentials](https://www.w3.org/TR/vc-data-model/). If you successfully followed the previous steps, you are ready to send health certificates to your users. 
 
 As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
 

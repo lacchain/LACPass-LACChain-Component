@@ -153,11 +153,11 @@ b) El archivo `SCA.crt`, ubicado en el directorio `lacchain-setup-helper/certs/S
 
 c) Información de identificación de la organization de Salud en un archivo de texto:
 
+```
   i. Nombre legal
-
  ii. FHIR-URL
-
 iii. Código de País/Estado
+``` 
 
 4. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
 
@@ -165,6 +165,7 @@ iii. Código de País/Estado
 
 In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users.
 
+En esta sección aprenderá a usar el endpoint expuesto por el componente lacpass-lacchain para enviar certificados de saludo como [credenciales verificables](https://www.w3.org/TR/vc-data-model/). 
 
 
 As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
