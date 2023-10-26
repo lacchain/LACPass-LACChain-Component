@@ -190,14 +190,14 @@ Donde:
 * **IssuerDid:** DID del Emisor, este es el DID creado en la sección [Proceso de configuración para incorporar organizaciones de salud](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#proceso-de-configuraci%C3%B3n-para-incorporar-organizaciones-de-salud) en el paso 1 y se encuentra disponible en el archivo `lacchain-setup-helper/did.txt`.
 * **receiverDid:** DID del Receptor (el paciente/individuo que recibe el certificado) que debe compartir con Usted para recibir la credencial emitida en su billetera. Los individuos/pacientes pueden obtener su identificador decentralizado (DID) luego de registrar su billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/.
 
-**NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
+**Nota:** Un ejemplo completo con el payload requerido está disponible en https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-### LACPass Verifier
+### Verificador LACPass
 
-LACPass Verifier is the last component used to verify DDCC-compliant health certificates. This component is made up of two subcomponents:
+El componente verificador LACPass permite verificar los certificados de salud conformes a la especificación DDCC. Este componente contiene dos subcomponentes:
 
-1. LACPass-front-verifier: This is a full front-end component that needs to be connected to LACPass-trusted-List to check the validity of health certificates. The repository is available at https://github.com/lacchain/LACPass-front-verifier
-2. LACPass-trusted-list: This is the backend API component which cryptographically verifies certificate issuers and decodes data returning it alongside the certificate health validity. Access to this repository is available at https://github.com/lacchain/LACPass-trusted-list
+1. LACPass-front-verifier: Componente front-end que requiere conectarse con el componente `LACPass-trusted-List` para verificar la validez de los certificados de salud. El repositorio de este componente está disponible en https://github.com/lacchain/LACPass-front-verifier
+2. LACPass-trusted-list: Componente del backend API que criptográficamente verifica los emisores de certificados y decodifica data retornando la data y la validez del certificado de salud. El repositorio de este componente está disponible en https://github.com/lacchain/LACPass-trusted-list
 
-**Note:** A fully runnning instance of LACPass Verifier can be found at https://lacpass.lacchain.net/
+**Nota:** Una instancia en ejecución del Verificador LACPass está disponible en https://lacpass.lacchain.net/
 
