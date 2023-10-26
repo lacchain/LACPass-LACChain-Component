@@ -132,7 +132,7 @@ After completing the onboard setup process, the following information will be in
 - A `did.txt` file containing the decentralized identifier (DID) of your organization, have it handy in case you need to access the DID.
 - The `/certs` directory containing the `/DSC` and `/SCA` subdirectories.
 
-## Sharing the information for onboarding the trust network
+## Sharing the information for onboarding the LACPass trust network
 
 Now you are ready to share the onboarding information with the committee, please follow these steps:
 

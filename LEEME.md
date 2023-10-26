@@ -107,7 +107,7 @@ se creará un DID y será almacenado en el archivo `did.txt`:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didtxtfile.png)
 
-2. El próximo paso es asociar el DID creado en el paso previo con el certificado X.509 que será usado para firmar los certificados de Salud, tipee 'AX' en el menú CLI Main Menu e ingrese la ruta donde el certificado X.509 está localizado. (Si creó un certificado auto-firmado la ruta sería como la indicada en el paso 7):
+2. El próximo paso es asociar el DID creado en el paso previo con el certificado X.509 que será usado para firmar los certificados de Salud, tipee 'AX' en el menú CLI Main Menu e ingrese la ruta donde se encuentra el certificado X.509. (Si creó un certificado auto-firmado la ruta sería como la indicada en el paso 7 de los países sin PKI):
   
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509path.png)
 
@@ -134,36 +134,38 @@ Una vez completado el proceso de configuración para la incorporación, la sigui
 - Un archivo `did.txt` que contiene el identificador decentralizado (DID) de su organización, manténgalo cerca por si requiere acceder al DID.
 - Un directorio `/certs` que contiene los subdirectorios `/DSC` y `/SCA`.
 
-## Sharing the information for onboarding the trust network
+## Compartir la información para incorporación en la red de confianza LACPass
 
-Now you are ready to share the onboarding information with the committee, please follow these steps:
+Ahora puede compartir la información de incorporación en la red de confianza con el comité, por favor siga los siguientes pasos:
 
-1. Start the CLI again.
-2. Type 'GCM' (Get Current Manager) **to fetch the entity and manager details** as shown:
+1. Inicie el CLI nuevamente.
+2. Tipee 'GCM' (Get Current Manager) **para obtener los detalles de la entidad y el gestor** como se muestra:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
 
-Copy the content in a text file and name the file something like `Entity-Manager-Details.txt`.
+Copie el contenido en un archivo de texto y nómbrelo similar a `Entity-Manager-Details.txt`. 
 
-3. Pack the following infromation in a zip file:
+3. Incluya la siguiente información en un archivo comprimido (zip):
 
-a) `Entity-Manager-Details.txt` file
+a) El archivo `Entity-Manager-Details.txt`
 
-b) The `SCA.crt` file, located in the directory `lacchain-setup-helper/certs/SCA/SCA.crt` 
+b) El archivo `SCA.crt`, ubicado en el directorio `lacchain-setup-helper/certs/SCA/SCA.crt` 
 
-c) Organization identifying information in a text file:
+c) Información de identificación de la organization de Salud en un archivo de texto:
 
-  i. Legal name
+  i. Nombre legal
 
  ii. FHIR-URL
 
-iii. Country/State code
+iii. Código de País/Estado
 
-4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
+4. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
 
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
 
-In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users. 
+In this section you will learn how to use the endpoint exposed by the lacpass-lacchain component to send health certificates as verifiable credentials. If you successfully followed the previous steps, you are ready to send health certificates to your users.
+
+
 
 As explained in [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability) section lacpass-lacchain runs on port 3010 by default. To send DDCCCoreDataSet health certificates you can use the [Postman](https://www.postman.com/) tool with the following parameters:
 
