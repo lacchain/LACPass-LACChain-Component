@@ -93,44 +93,46 @@ Una vez completado estos pasos habrá creado exitosamente un certificado auto-fi
 ### Países con Infraestructura de Llave Pública (PKI)
 Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 prra completar el proceso. 
 
-## Onboard health organizations setup process
+## Proceso de configuración para incorporar organizaciones de salud en la red de confianza LACPass
+
+Usando los certificados PKI X.509 de la organización de Salud de su País, por favor siga los siguientes pasos para incorporar su organización de Salud en la red de confianza LACPass
 
 Using your Country Health Organization PKI X.509 certificates, please follow this steps for the onboard setup of your Health organization in the LACPass trust network:
 
-1. Create a decentralized identifier [DID](https://w3c.github.io/did-core) typing 'CD' in the CLI Main Menu:
+1. Crear un identificador descentralizado [DID](https://w3c.github.io/did-core) para su organización de salud, tipeando 'CD' en el menú CLI Main Menu:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLICreateDID.png) 
 
-and a DID will be created and saved in a `did.txt` file: 
+se creará un DID y será almacenado en el archivo `did.txt`: 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didtxtfile.png)
 
-2. The next step is to associate the DID created in the previous step with the X.509 Certificate that will be used to sign Health certificates, type 'AX' in the CLI Main Menu and enter the path where the X.509 certificate is located. (If you created a self-signed certficate the path would be as in step 7): 
-    
+2. El próximo paso es asociar el DID creado en el paso previo con el certificado X.509 que será usado para firmar los certificados de Salud, tipee 'AX' en el menú CLI Main Menu e ingrese la ruta donde el certificado X.509 está localizado. (Si creó un certificado auto-firmado la ruta sería como la indicada en el paso 7):
+  
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509path.png)
 
-After entering the appropriate path you should get a successful message, inidcating the X.509 certificate was successfully associated with the DID:
+Una vez ingresada la ruta apropiada debe recibir un mensaje indicando que el certificado X.509 fue asociado exitosamente con el DID: 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didx509association.png)
 
-**Note:** the DID must remain the same for the association with the X.509 certificate to be valid.
+**Nota:** el DID debe permanecer igual para que la asociación con el certificado X.509 sea válida. 
 
-3. Afterwards, a DID manager must be created, type 'CM' in the CLI Main Menu and enter the number of days in which the manager will be considered valid, for example: 1000 days. Do not enter a number less than 365 days.
+3. A continuacion debe crear un gestor para el DID, tipee 'CM' en el menú CLI Main Menu e ingrese el número de días por el cual será válido el gestor del DID, por ejemplo: 1000 días. No ingrese un número menor a 365 días.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingManager.png)
 
-and a successful response will be displayed:
+se desplegará una respuesta exitosa: 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didManagerCreation.png)
 
-4. And, type 'exit' to end the onboard setup process.
+4. Para finalizar el proceso de configuración para la incorporación, tipee 'exit'.
  
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/exit.png)
 
-After completing the onboard setup process, the following information will be in the `lacchain-setup-helper` directory:
+Una vez completado el proceso de configuración para la incorporación, la siguiente información estará en el directorio `lacchain-setup-helper`:
 
-- A `did.txt` file containing the decentralized identifier (DID) of your organization, have it handy in case you need to access the DID.
-- The `/certs` directory containing the `\DSC` and `\SCA` subdirectories.
+- Un archivo `did.txt` que contiene el identificador decentralizado (DID) de su organización, manténgalo cerca por si requiere acceder al DID.
+- Un directorio `/certs` que contiene los subdirectorios `\DSC` y `\SCA`.
 
 ## Sharing the information for onboarding the trust network
 

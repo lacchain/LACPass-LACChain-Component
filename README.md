@@ -68,7 +68,7 @@ In the CLI Main Menu type 'SSC' and enter the requested information:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
 
-7. A subdirectory named `/certs` is created inside the directory you are running the script, with two subdirectories **Document Signer Certificates** `/DSC` and **Signing Certificate Authority** `/SCA` as displayed:
+7. A subdirectory named `/certs` is created inside the directory you are running the script, containing two subdirectories **Document Signer Certificates** `/DSC` and **Signing Certificate Authority** `/SCA` as displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
 
