@@ -80,7 +80,7 @@ b) `DSC.csr` es el Certificate Signing Request que contiene la llave pública y 
 
 c) `DSC.key` es la llave privada usada para firmar los Certificados de Salud, si su organización de Salud usará esta llave (opcional), por favor complete estos pasos:
 - Copie el archivo `DSC.key` dentro del directorio `cert-data` localizado en el directorio raíz de su repositorio `IPS-national-backend`.
-- Renombre la nueva copia de `DSC.crt` a `priv.pem`
+- Renombre la nueva copia de `DSC.key` a `priv.pem`
 
 El subdirectorio Signing Certificate Authority `/SCA` contiene dos archivos:
 
@@ -91,7 +91,7 @@ b) `SCA.key` es la llave privada de la Autoridad Certificadora que firma.
 Una vez completado estos pasos habrá creado exitosamente un certificado auto-firmado para la organización de Salud de su País.
 
 ### Países con Infraestructura de Llave Pública (PKI)
-Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 prra completar el proceso. 
+Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 para completar el proceso. 
 
 ## Proceso de configuración para incorporar organizaciones de salud
 
@@ -186,7 +186,7 @@ Para enviar certificados de salud DDCCCoreDataSet puede usar la herramienta [Pos
 ```
 
 Donde:
-* **bundle:** bundle FHIR, únicamente copiar y pegar el bundle FHIR completo.
+* **bundle:** bundle FHIR DDCC, únicamente copiar y pegar el bundle completo.
 * **IssuerDid:** DID del Emisor, este es el DID creado en la sección [Proceso de configuración para incorporar organizaciones de salud](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#proceso-de-configuraci%C3%B3n-para-incorporar-organizaciones-de-salud) en el paso 1 y se encuentra disponible en el archivo `lacchain-setup-helper/did.txt`.
 * **receiverDid:** DID del Receptor (el paciente/individuo que recibe el certificado) que debe compartir con Usted para recibir la credencial emitida en su billetera. Los individuos/pacientes pueden obtener su identificador decentralizado (DID) luego de registrar su billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/.
 
