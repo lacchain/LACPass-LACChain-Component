@@ -137,13 +137,14 @@ After completing the onboard setup process, the following information will be in
 Now you are ready to share the onboarding information with the committee, please follow these steps:
 
 1. Start the CLI again.
-2. Type 'GCM' (Get Current Manager) **to fetch the entity and manager details** as shown:
+2. Now enter the URL of the lacpass-lacchain
+3. Type 'GCM' (Get Current Manager) **to fetch the entity and manager details** as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
 
 Copy the content in a text file and name the file something like `Entity-Manager-Details.txt`.
 
-3. Pack the following infromation in a zip file:
+4. Pack the following infromation in a zip file:
 
 a) `Entity-Manager-Details.txt` file
 
@@ -157,7 +158,7 @@ c) Organization identifying information in a text file:
 iii. Country/State code
 ``` 
 
-4. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
+5. Send the zip file via e-mail to epacheco@iadb.org and antoniole@iadb.org
 
 ## Sending Health certificates wrapped as Verifiable Credentials
 

@@ -97,8 +97,6 @@ Si la organización de Salud de su País tiene una Infraestructura de Llave Púb
 
 Usando los certificados PKI X.509 de la organización de Salud de su País, por favor siga los siguientes pasos para incorporar su organización de Salud en la red de confianza LACPass
 
-Using your Country Health Organization PKI X.509 certificates, please follow this steps for the onboard setup of your Health organization in the LACPass trust network:
-
 1. Crear un identificador descentralizado [DID](https://w3c.github.io/did-core) para su organización de salud, tipeando 'CD' en el menú CLI Main Menu:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLICreateDID.png) 
@@ -139,17 +137,18 @@ Una vez completado el proceso de configuración para la incorporación, la sigui
 Ahora puede compartir con el comité la información para incorporación de su organización de salud en la red de confianza, por favor siga los siguientes pasos:
 
 1. Inicie el CLI nuevamente.
-2. Tipee 'GCM' (Get Current Manager) **para obtener los detalles de la entidad y el gestor** como se muestra:
+2. Ahora ingrese el URL del servicio lacpass-lacchain (como lo hizo initialmente)
+3. Tipee 'GCM' (Get Current Manager) **para obtener los detalles de la entidad y el gestor** como se muestra:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
 
 Copie el contenido en un archivo de texto y nómbrelo similar a `Entity-Manager-Details.txt`. 
 
-3. Incluya la siguiente información en un archivo comprimido (zip):
+4. Incluya la siguiente información en un archivo comprimido (zip):
 
 a) El archivo `Entity-Manager-Details.txt`
 
-b) El archivo `SCA.crt`, ubicado en el directorio `lacchain-setup-helper/certs/SCA/SCA.crt` 
+b) El archivo `SCA.crt`, ubicado en el directorio `lacchain-setup-helper/certs/SCA/SCA.crt`  **Nota:** Si su Organización de Salud ya posee una llave publica provista via un PKI omita este paso.
 
 c) Información de identificación de la organization de Salud en un archivo de texto:
 
@@ -159,7 +158,7 @@ c) Información de identificación de la organization de Salud en un archivo de 
 iii. Código de País/Estado
 ``` 
 
-4. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
+5. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
 
 ## Sending Health certificates wrapped as Verifiable Credentials
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
