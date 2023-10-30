@@ -137,7 +137,7 @@ After completing the onboard setup process, the following information will be in
 Now you are ready to share the onboarding information with the committee, please follow these steps:
 
 1. Start the CLI again.
-2. Now enter the URL of the lacpass-lacchain
+2. Now enter the URL of the lacpass-lacchain service
 3. Type 'GCM' (Get Current Manager) **to fetch the entity and manager details** as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/GCM.png)
