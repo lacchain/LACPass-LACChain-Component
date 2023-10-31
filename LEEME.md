@@ -2,13 +2,15 @@
 
 ## Resumen
 
-El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud a gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
+El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud a gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. 
+
+Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 
 ### Requerimientos 
 - Contar con una instancia en ejecución del componente LACPass-LACChain parte del `IPS-national-backend` disponible en https://github.com/RACSEL/IPS-national-backend
 - Acceso al script ejecutable `client-helper` disponible en https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
 - Acceso a Internet
-- Software [Postman](https://www.postman.com/) para interactuar con APIs
+- Software [Postman](https://www.postman.com/) 
 
 ### Verificar la disponibilidad del servicio
 1. Al ejecutar el componente lacpass-lacchain desde `IPS-national-backend` el servicio queda expuesto en el puerto 3010. 
@@ -18,8 +20,8 @@ El componente de software LACPass-LACChain permite a los Ministerios u Organizac
 
 ### Proceso de configuración
 
-A continuación ** CONTINUACI
-ON Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el script ejecutable `client-helper`.
+A continuación debe ejecutar el menú principal del componente LACPass-LACChain, el CLI Main Menu, que le permitirá crear un identificador decentralizado [DID](https://w3c.github.io/did-core) para su organización de Salud y algunas llave requeridas para firmar los certificados de Salud. 
+
 1. Una vez verificada la disponibilidad del servicio según la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:
 
@@ -42,10 +44,7 @@ Para incorporar la organización de Salud de su país en la red de confianza deb
 
 1. Su organización no cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar con la siguiente sección https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#pa%C3%ADses-sin-infraestructura-de-llave-p%C3%BAblica-pki
 
-2. Su organización Si cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar
-Si su organización de Salud y revise las siguientes opciones.
-
-
+2. Su organización Si cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar con la sección https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#pa%C3%ADses-con-infraestructura-de-llave-p%C3%BAblica-pki
 
 ### Países sin Infraestructura de Llave Pública (PKI)
 Si la organización de Salud de su País no tiene implementada una Infraestructura de Llave Pública, se le pedirá la creación de un certificado auto-firmado (en inglés Self-Signed Certificate [SSC]) con los siguientes pasos.
@@ -168,7 +167,6 @@ iii. Código de País/Estado
 
 5. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
 
-## Sending Health certificates wrapped as Verifiable Credentials
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
 
 En esta sección aprenderá a usar el endpoint expuesto por el componente lacpass-lacchain para enviar certificados de salud como [credenciales verificables](https://www.w3.org/TR/vc-data-model/). De haber completado satisfactoriamente los pasos previos, está listo para enviar certificados de salud a sus usuarios.
