@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud a gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. 
+El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. 
 
 Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 
@@ -38,71 +38,10 @@ $ bash client-helper.sh
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/CLIMainMenu.png)
 
-## Incorporación de organizaciones de Salud en la red de confianza LACPass 
-
-Para incorporar la organización de Salud de su país en la red de confianza debe verificar una de las siguientes opciones:
-
-1. Su organización no cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar con la siguiente sección https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#pa%C3%ADses-sin-infraestructura-de-llave-p%C3%BAblica-pki
-
-2. Su organización Si cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar con la sección https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#pa%C3%ADses-con-infraestructura-de-llave-p%C3%BAblica-pki
-
-### Países sin Infraestructura de Llave Pública (PKI)
-Si la organización de Salud de su País no tiene implementada una Infraestructura de Llave Pública, se le pedirá la creación de un certificado auto-firmado (en inglés Self-Signed Certificate [SSC]) con los siguientes pasos.
-
-En el Menú Principal del CLI tipee 'SSC' e ingrese la información requerida: 
-
-1. El primer paso es ingresar el [Código de País](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) para el certificado auto-firmado de su organización de Salud:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
-
-2. Ahora puede ingrear el [Código de Estado](https://en.wikipedia.org/wiki/ISO_3166-2) del país seleccionado (por ejemplo: https://en.wikipedia.org/wiki/ISO_3166-2:BR si el país es Brasil), o puede presionar enter para omitir este paso:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
-
-3. A continuación, ingrese el nombre de su organización de Salud (por ejemplo: Ministerio de Salud de Peru Demo Brasil) como se muestra:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganization.png)
-
-4. El próximo paso, debe ingresar un nombre común (Common Name) para su organización de Salud (por ejemplo: BrasilDemo_MoH), o puede presionar enter y omitir este paso:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509HealthOrganizationCommonName.png)
-
-5. Una vez completados estos pasos, los datos especificados para el certificado auto-firmado serán desplegados solicitando su confirmación. **Nota:** Tenga en mente que si no se especificó un Código de País válido, probablemente tenga un error.
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509DataConfirmation.png)
-
-6. Una vez confirmado, la creación de certificado auto-firmado y los datos son desplegados:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509Creation.png)
-
-7. Un subdirectorio con nombre `/certs` es creado dentro del directorio donde está ejecutando el script, con dos subdirectorios **Document Signer Certificates** `/DSC` y **Signing Certificate Authority** `/SCA` como se muestra:
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/certsDirSubdirs.png)
-
-El subdirectorio Document Signer Certificates `/DSC` contiene tres archivos:
-
-a) `DSC.crt` es el certificado X.509.
-
-b) `DSC.csr` es el Certificate Signing Request que contiene la llave pública y el nombre común requerido por una Autoridad Certificadora.
-
-c) `DSC.key` es la llave privada usada para firmar los Certificados de Salud, si su organización de Salud usará esta llave (opcional), por favor complete estos pasos:
-- Copie el archivo `DSC.key` dentro del directorio `cert-data` localizado en el directorio raíz de su repositorio `IPS-national-backend`.
-- Renombre la nueva copia de `DSC.key` a `priv.pem`
-
-El subdirectorio Signing Certificate Authority `/SCA` contiene dos archivos:
-
-a) `SCA.crt` es el certificado X.509.
-
-b) `SCA.key` es la llave privada de la Autoridad Certificadora que firma.
-
-Una vez completado estos pasos habrá creado exitosamente un certificado auto-firmado para la organización de Salud de su País.
-
-### Países con Infraestructura de Llave Pública (PKI)
-Si la organización de Salud de su País tiene una Infraestructura de Llave Pública implementada, el proceso de incorporación a la red de confianza LACPass require que use su certificado X.509 para completar el proceso. 
 
 ## Proceso de configuración para incorporar organizaciones de salud
 
-Usando los certificados PKI X.509 de la organización de Salud de su País, por favor siga los siguientes pasos para incorporar su organización de Salud en la red de confianza LACPass
+Por favor siga los siguientes pasos para incorporar su organización de Salud en la red de confianza LACPass
 
 1. Crear un identificador descentralizado [DID](https://w3c.github.io/did-core) para su organización de salud, tipeando 'CD' en el menú CLI Main Menu:
 
@@ -112,17 +51,7 @@ se creará un DID y será almacenado en el archivo `did.txt`:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didtxtfile.png)
 
-2. El próximo paso es asociar el DID creado en el paso previo con el certificado X.509 que será usado para firmar los certificados de Salud, tipee 'AX' en el menú CLI Main Menu e ingrese la ruta donde se encuentra el certificado X.509. (Si creó un certificado auto-firmado la ruta sería como la indicada en el paso 7 de los países sin PKI):
-  
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509path.png)
-
-Una vez ingresada la ruta apropiada debe recibir un mensaje indicando que el certificado X.509 fue asociado exitosamente con el DID: 
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didx509association.png)
-
-**Nota:** el DID debe permanecer igual para que la asociación con el certificado X.509 sea válida. 
-
-3. A continuacion debe crear un gestor para el DID, tipee 'CM' en el menú CLI Main Menu e ingrese el número de días por el cual será válido el gestor del DID, por ejemplo: 1000 días. No ingrese un número menor a 365 días.
+2. A continuacion debe crear un gestor para el DID, tipee 'CM' en el menú CLI Main Menu e ingrese el número de días por el cual será válido el gestor del DID, por ejemplo: 1000 días. No ingrese un número menor a 365 días.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingManager.png)
 
@@ -130,14 +59,13 @@ se desplegará una respuesta exitosa:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/didManagerCreation.png)
 
-4. Para finalizar el proceso de configuración para la incorporación, tipee 'exit'.
+3. Para finalizar el proceso de configuración para la incorporación, tipee 'exit'.
  
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/exit.png)
 
 Una vez completado el proceso de configuración para la incorporación, la siguiente información estará en el directorio `lacchain-setup-helper`:
 
 - Un archivo `did.txt` que contiene el identificador decentralizado (DID) de su organización, manténgalo cerca por si requiere acceder al DID.
-- Un directorio `/certs` que contiene los subdirectorios `/DSC` y `/SCA`.
 
 ## Compartir la información para incorporación en la red de confianza LACPass
 
@@ -155,9 +83,7 @@ Copie el contenido en un archivo de texto y nómbrelo similar a `Entity-Manager-
 
 a) El archivo `Entity-Manager-Details.txt`
 
-b) El archivo `SCA.crt`, ubicado en el directorio `lacchain-setup-helper/certs/SCA/SCA.crt`  **Nota:** Si su Organización de Salud ya posee una llave publica provista via un PKI omita este paso.
-
-c) Información de identificación de la organization de Salud en un archivo de texto:
+b) Información de identificación de la organization de Salud en un archivo de texto:
 
 ```
   i. Nombre legal
@@ -165,7 +91,7 @@ c) Información de identificación de la organization de Salud en un archivo de 
 iii. Código de País/Estado
 ``` 
 
-5. Enviar el archivo comprimido (zip) vía correo electrónioco a epacheco@iadb.org y antoniole@iadb.org
+5. Enviar el archivo comprimido (zip) vía correo electrónico a epacheco@iadb.org y antoniole@iadb.org
 
 ## Enviando certificados de Salud contenidos en Credenciales Verificables
 
