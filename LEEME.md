@@ -118,7 +118,7 @@ Para enviar certificados de salud DDCCCoreDataSet puede usar la herramienta [Pos
 ```
 
 Donde:
-* **bundle:** bundle FHIR DDCC, únicamente copiar y pegar el bundle completo.
+* **bundle:** Bundle FHIR DDCC, únicamente copiar y pegar el Bundle completo.
 * **IssuerDid:** DID del Emisor, este es el DID creado en la sección [Proceso de configuración para incorporar organizaciones de salud](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#proceso-de-configuraci%C3%B3n-para-incorporar-organizaciones-de-salud) en el paso 1 y se encuentra disponible en el archivo `lacchain-setup-helper/did.txt`.
 * **receiverDid:** DID del Receptor (el paciente/individuo que recibe el certificado) que debe compartir con Usted para recibir la credencial emitida en su billetera. Los individuos/pacientes pueden obtener su identificador decentralizado (DID) luego de registrar su billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/.
 
