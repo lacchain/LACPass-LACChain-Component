@@ -39,7 +39,7 @@ $ bash client-helper.sh
 
 ## Onboard health organizations setup process
 
-Using your Country Health Organization PKI X.509 certificates, please follow this steps for the onboard setup of your Health organization in the LACPass trust network:
+Please follow these steps for the onboard setup of your Health organization in the LACPass trust network:
 
 1. Create a decentralized identifier [DID](https://w3c.github.io/did-core) typing 'CD' in the CLI Main Menu:
 
