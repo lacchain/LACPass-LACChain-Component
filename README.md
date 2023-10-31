@@ -7,14 +7,14 @@ The LACCPass-LACChain component enables Health Ministries or Health Organization
 This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
 ### Requirements
-- Make sure you have up and running and instance of the LACPass Client component available at https://github.com/RACSEL/IPS-national-backend
-- Access to the client-helper executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
+- Make sure you have up and running and instance of the LACPass-LACChain component part of `IPS-national-backend` available at https://github.com/RACSEL/IPS-national-backend
+- Access to the 'client-helper.sh` executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
 - Internet access
-- [Postman](https://www.postman.com/) software to interact with APIs
+- [Postman](https://www.postman.com/) software
 
 ### Verify Service availability
 1. Running the lacpass-lacchain component from `IPS-national-backend` will expose the service at port 3010.
-2. Verify the lacpass-lacchain component is running either checking the logs or just running a telnet command with the proper URL in a bash shell:
+2. Verify the lacpass-lacchain service is running either checking the logs or running a telnet command with the proper URL in a bash shell:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 

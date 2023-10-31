@@ -14,7 +14,7 @@ Este manual describe los pasos para ejecutar el componente LACPass-LACChain y es
 
 ### Verificar la disponibilidad del servicio
 1. Al ejecutar el componente lacpass-lacchain desde `IPS-national-backend` el servicio queda expuesto en el puerto 3010. 
-2. Para verificar la ejecución del componente lacpass-lacchain puede revisar el log o ejecutar el comando telnet en un shell bash con el URL apropiado:
+2. Para verificar la ejecución del servicio lacpass-lacchain puede revisar el log o ejecutar el comando telnet en un shell bash con el URL apropiado:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
