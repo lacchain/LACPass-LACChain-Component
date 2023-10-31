@@ -80,7 +80,7 @@ b) `DSC.csr` is the Certificate Signing Request contains the public key and comm
 
 c) `DSC.key` is the private key used to sign Health Certificates, if your Health organization will use this key (optional), please complete these steps:
 - Copy the `DSC.key` file into the `cert-data` directory located in the root directory of your `IPS-national-backend` repository.
-- Rename the new copy of `DSC.crt` to `priv.pem`
+- Rename the new copy of `DSC.key` to `priv.pem`
 
 The Signing Certificate Authority `/SCA` subdirectory contains two files:
 
@@ -183,7 +183,7 @@ As explained in [Verify service availability](https://github.com/lacchain/LACPas
 ```
 
 Where:
-* **bundle:** FHIR bundle, just copy and paste the full FHIR bundle
+* **bundle:** DDCC FHIR bundle, just copy and paste the full FHIR bundle
 * **IssuerDid:** Issuer DID, this is the decentralized identifier you created in the section Running Setup/Onboard steps in step 6 and that is available in the lacchain-setup-helper/did.txt file
 * **receiverDid:** This is the Receiver DID (the patient/individual receiving the certificate) will share with you to receive the issued credential in their wallet. Patients/individuals can easily get their unique decentralized identifier (DID) after setting up their digital wallet available at https://lacpass-openprotest-wallet.lacchain.net/
 
