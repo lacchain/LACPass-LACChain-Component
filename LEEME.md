@@ -18,7 +18,8 @@ El componente de software LACPass-LACChain permite a los Ministerios u Organizac
 
 ### Proceso de configuración
 
-Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el script ejecutable `client-helper`.
+A continuación ** CONTINUACI
+ON Para crear el identificador descentralizado [DID](https://w3c.github.io/did-core) de su organización de salud y algunas llave requeridas ejecute el script ejecutable `client-helper`.
 1. Una vez verificada la disponibilidad del servicio según la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:
 
@@ -37,18 +38,25 @@ $ bash client-helper.sh
 
 ## Incorporación de organizaciones de Salud en la red de confianza LACPass 
 
-Para incorporar la organización de salud de su país debe verificar si su organización de salud cuenta con una Infraestructura de Llave Pública implementada, y revise las siguientes opciones.
+Para incorporar la organización de Salud de su país en la red de confianza debe verificar una de las siguientes opciones:
+
+1. Su organización no cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar con la siguiente sección https://github.com/lacchain/LACPass-LACChain-Component/blob/main/LEEME.md#pa%C3%ADses-sin-infraestructura-de-llave-p%C3%BAblica-pki
+
+2. Su organización Si cuenta con una Infraestructura de Llave Pública (PKI) implementada debe continuar
+Si su organización de Salud y revise las siguientes opciones.
+
+
 
 ### Países sin Infraestructura de Llave Pública (PKI)
-Si la organización de salud de su País no tiene implementada una Infraestructura de Llave Pública, se le pedirá la creación de un certificado auto-firmado (en inglés Self-Signed Certificate [SSC]) con los siguientes pasos.
+Si la organización de Salud de su País no tiene implementada una Infraestructura de Llave Pública, se le pedirá la creación de un certificado auto-firmado (en inglés Self-Signed Certificate [SSC]) con los siguientes pasos.
 
 En el Menú Principal del CLI tipee 'SSC' e ingrese la información requerida: 
 
-1. El primer paso es ingresar el [Código de País](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) para el certificado auto-firmado de su organización de salud:
+1. El primer paso es ingresar el [Código de País](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) para el certificado auto-firmado de su organización de Salud:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509CountryCode.png)
 
-2. Ahora puede ingrear el [Código de Estado](https://en.wikipedia.org/wiki/ISO_3166-2) del país seleccionado (por ejemplo: https://en.wikipedia.org/wiki/ISO_3166-2:BR si el país es Brasil), o puede presionar enter para saltar este paso:
+2. Ahora puede ingrear el [Código de Estado](https://en.wikipedia.org/wiki/ISO_3166-2) del país seleccionado (por ejemplo: https://en.wikipedia.org/wiki/ISO_3166-2:BR si el país es Brasil), o puede presionar enter para omitir este paso:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/X509StateCode.png)
 

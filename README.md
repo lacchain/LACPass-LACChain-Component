@@ -189,6 +189,21 @@ Where:
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
+## Setting up digital wallet patient/individual
+
+### Requirements
+
+- Internet access
+- Web browser (Chrome, Firefox) desktop or mobile
+- Metamask browser extension
+- Access to the digital wallet setup available at https://lacpass-openprotest-wallet.lacchain.net/
+
+Please follow this steps to setup your digital wallet:
+
+
+
+
+
 ### LACPass Verifier
 
 LACPass Verifier is the last component used to verify DDCC-compliant health certificates. This component is made up of two subcomponents:
