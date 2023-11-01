@@ -6,10 +6,10 @@ El componente de software LACPass-LACChain permite a los Ministerios u Organizac
 
 Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 
-### Requerimientos 
-- Contar con una instancia en ejecución del componente LACPass-LACChain parte del `IPS-national-backend` disponible en https://github.com/RACSEL/IPS-national-backend
-- Acceso al script ejecutable `client-helper` disponible en https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
+### Requerimientos
 - Acceso a Internet
+- Contar con una instancia en ejecución del componente LACPass-LACChain parte del `IPS-national-backend` disponible en https://github.com/RACSEL/IPS-national-backend
+- Acceso al script ejecutable `client-helper.sh` disponible en https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
 - Software [Postman](https://www.postman.com/) 
 
 ### Verificar la disponibilidad del servicio
@@ -18,9 +18,9 @@ Este manual describe los pasos para ejecutar el componente LACPass-LACChain y es
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
-### Proceso de configuración
+### Configuración del servicio
 
-A continuación debe ejecutar el menú principal del componente LACPass-LACChain, el CLI Main Menu, que le permitirá crear un identificador decentralizado [DID](https://w3c.github.io/did-core) para su organización de Salud y algunas llave requeridas para firmar los certificados de Salud. 
+A continuación debe ejecutar el menú principal del componente LACPass-LACChain el CLI Main Menu, que le permitirá crear un identificador decentralizado [DID](https://w3c.github.io/did-core) para su organización de Salud y algunas llave requeridas para firmar los certificados de Salud. 
 
 1. Una vez verificada la disponibilidad del servicio según la sección previa [Verificar la disponibilidad del servicio](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Previo a ejecutar el CLI, debe ejecutar estos comandos en un shell linux bash:

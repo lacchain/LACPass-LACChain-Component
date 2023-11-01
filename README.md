@@ -7,9 +7,9 @@ The LACCPass-LACChain component enables Health Ministries or Health Organization
 This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
 ### Requirements
+- Internet access
 - Make sure you have up and running and instance of the LACPass-LACChain component part of `IPS-national-backend` available at https://github.com/RACSEL/IPS-national-backend
 - Access to the 'client-helper.sh` executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
-- Internet access
 - [Postman](https://www.postman.com/) software
 
 ### Verify Service availability
@@ -18,9 +18,10 @@ This manual describes the steps to run the LACPass-LACChain component, and speci
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/telnet3010.png)
 
-### Running Setup
+### Configuring the service
 
-Now run the CLI (Client helper executable script) to setup your decentralized identifier [DID](https://w3c.github.io/did-core) and set some keys.
+Now run the CLI Main Menú (Client helper executable script) that will enable you to setup the decentralized identifier [DID](https://w3c.github.io/did-core) for your organization and set some keys to sign the Health certificates.
+
 1. Make sure you have verified the service availability as described in the previous section [Verify service availability](https://github.com/lacchain/LACPass-LACChain-Component#verify-service-availability)
 2. Before running the CLI make sure to execute this in a linux bash terminal:
 
