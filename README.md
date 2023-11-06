@@ -126,12 +126,12 @@ Where:
 ### Requirements
 
 - Internet access
-- Web browser (Chrome, Firefox) desktop or mobile
+- Web browser (Chrome, Firefox, Opera) desktop or mobile
 - Access to the digital wallet setup available at https://lacpass-openprotest-wallet.lacchain.net/
 
-Please follow this steps to setup your digital wallet:
+Please follow this steps to setup your LACPass digital wallet:
 
-1. On your first access to https://lacpass-openprotest-wallet.lacchain.net/ LACPass digital wallet setup you will  resented with a screen like this:
+1. On your first access to LACPass digital wallet (https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
 
