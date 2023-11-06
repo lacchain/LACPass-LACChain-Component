@@ -163,18 +163,20 @@ After clicking Create account the following operations when creating an account 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredential.png)
 
-6. And the following view is presented with the LACChain ID Credential information as "Claims": **Id, givenName, familyName, email**. 
-
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
+6. And the following view is presented with the LACChain ID Credential information as "Claims": **Id, givenName, familyName, and email**. 
 
 The **Id** is the user DID, as seen in this example the DID value is: 
 `did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
 
-7. Please click on the upper right button (with the blue oval) with the user name:
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
+
+7. Now, please click on the upper right button (with the blue oval) with the user name:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
+8. The following drop-down menu is presented: 
 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
 
 
