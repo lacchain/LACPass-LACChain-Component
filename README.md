@@ -163,6 +163,17 @@ After clicking Create account the following operations when creating an account 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredential.png)
 
+6. And the following view is presented with the LACChain ID Credential information as "Claims": **Id, givenName, familyName, email**. 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
+
+The **Id** is the user DID, as seen in this example the DID value is: 
+`did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
+
+
+
+
+
 
 ## LACPass Verifier
 
