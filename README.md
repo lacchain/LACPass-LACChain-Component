@@ -145,6 +145,16 @@ Please follow this steps to setup your digital wallet:
 
 **Note:** After completing the registration information and you click on Create account the account data will be encrypted in the browser's local storage.
 
+After clicking Create account the following operations will be displayed as shown:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingNewAccountDID.png)
+
+4. The user wallet home once created looks like this:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletUserLACChainIDHome.png)
+
+
+
 
 ## LACPass Verifier
 
