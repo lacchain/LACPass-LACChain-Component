@@ -165,12 +165,14 @@ After clicking Create account the following operations when creating an account 
 
 6. And the following view is presented with the LACChain ID Credential information as "Claims": **Id, givenName, familyName, and email**. 
 
-The **Id** is the user DID, as seen in this example the DID value is: 
+- The **Id** is the user DID, as seen in this example the DID value is: 
 `did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
+
+- This DID value must be shared with your Health organization to issue and deliver the health credentials to the user wallet. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
 
-7. Now, please click on the upper right button (with the blue oval) with the user name:
+7. Now, please click on the upper right button (with the blue oval) that displays the user name:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
@@ -178,6 +180,13 @@ The **Id** is the user DID, as seen in this example the DID value is:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
+- Below the user name (which is blurred in the image) is the DID value, which can be copied clicking on the two blue buttons on the right side.
+
+- This DID value must be shared with your Health organization to issue and deliver the health credentials to the user wallet. 
+
+- To synchronize your digital wallet to receive issued credentials you may click the **Sync** button as displayed:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
 
 
 ## LACPass Verifier
