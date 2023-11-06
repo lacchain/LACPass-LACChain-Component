@@ -137,15 +137,16 @@ Please follow this steps to setup your digital wallet:
 
 (In case you already registered you may enter your email and password as the wallet credentials to login.)
 
-2. Otherwise, please click on the [register](https://lacpass-openprotest-wallet.lacchain.net/register) link that takes you to Create new account (registration) form:
+2. If not registered, please click on the [register](https://lacpass-openprotest-wallet.lacchain.net/register) link that takes you to Create new account (registration) form:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletRegistration.png)
 
-3. Please enter the following, User information: first name, family name, last name; and Account information: email and password. 
+3. Please enter the following **User information: first name, family name, last name** and **Account information: email and password**. 
 
 **Note:** After completing the registration information and you click on Create account the account data will be encrypted in the browser's local storage.
 
-### LACPass Verifier
+
+## LACPass Verifier
 
 LACPass Verifier is the last component used to verify DDCC-compliant health certificates. This component is made up of two subcomponents:
 
