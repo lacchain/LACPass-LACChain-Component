@@ -131,7 +131,11 @@ Where:
 
 Please follow this steps to setup your digital wallet:
 
+On your first access to https://lacpass-openprotest-wallet.lacchain.net/ LACPass digital wallet setup you will presented with a screen like this:
 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
+
+In case you have already registered ****
 
 
 
