@@ -131,13 +131,19 @@ Where:
 
 Please follow this steps to setup your digital wallet:
 
-On your first access to https://lacpass-openprotest-wallet.lacchain.net/ LACPass digital wallet setup you will presented with a screen like this:
+1. On your first access to https://lacpass-openprotest-wallet.lacchain.net/ LACPass digital wallet setup you will  resented with a screen like this:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
 
-In case you have already registered ****
+(In case you already registered you may enter your email and password as the wallet credentials to login.)
 
+2. Otherwise, please click on the [register](https://lacpass-openprotest-wallet.lacchain.net/register) link that takes you to Create new account (registration) form:
 
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletRegistration.png)
+
+3. Please enter the following, User information: first name, family name, last name; and Account information: email and password. 
+
+**Note:** After completing the registration information and you click on Create account the account data will be encrypted in the browser's local storage.
 
 ### LACPass Verifier
 
