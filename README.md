@@ -170,6 +170,9 @@ After clicking Create account the following operations when creating an account 
 The **Id** is the user DID, as seen in this example the DID value is: 
 `did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
 
+7. Please click on the upper right button (with the blue oval) with the user name:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
 
 
