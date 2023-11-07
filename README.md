@@ -131,7 +131,7 @@ Where:
 
 Please follow this steps to setup your LACPass digital wallet:
 
-1. On your first access to LACPass digital wallet (https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
+1. On your first access to [LACPass digital wallet](https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
 
@@ -143,16 +143,20 @@ Please follow this steps to setup your LACPass digital wallet:
 
 3. Please enter the following **User information: first name, family name, last name** and **Account information: email and password**. 
 
-**Note:** After completing the registration information and you click on Create account the account data will be encrypted in the browser's local storage.
+**Note:** After completing the registration information and clicking on `Create account` all account data will be encrypted in the browser's local storage.
 
 After clicking Create account the following operations are displayed as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingNewAccountDID.png)
 
 a. Generating a new DID
+
 b. Registering Public Keys
+
 c. Changing Controller
+
 d. Signing LACChain ID Credential
+
 e. Auto-issuing the LACChain ID Credential in the wallet
 
 4. Once the user wallet is setup, the following LACChain ID Credential is displayed with the information registered by the user:
@@ -168,7 +172,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 - The **Id** is the (patient/individual) wallet user decentralized identifier [DID](https://w3c.github.io/did-core), as seen in this example the DID value is: 
 `did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
 
-- This DID value must be shared with your Health organization to issue and deliver the health credentials to this user wallet. 
+- The DID value of your digital wallet must be shared with your Health organization, in order to issue and deliver the health credentials to your digital wallet. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
 
@@ -182,7 +186,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 - Below the user name (which is blurred in the image) is the DID value, which can also be copied by clicking on the two blue buttons on the right side.
 
-- This DID value must be shared with your Health organization to issue and deliver the health credentials to this user wallet. 
+- The DID value of your digital wallet must be shared with your Health organization, in order to issue and deliver the health credentials to your digital wallet. 
 
 - To synchronize your digital wallet to receive issued credentials you may click the **Sync** button as displayed:
 
@@ -195,6 +199,15 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 10. Please click on the Vaccination Certificate.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificateClick.png)
+
+11. The following information of the Vaccination Certificate is presented. **Note:** the health certificate is a LACPass-WHO-Vaccination Credential.
+
+On the left hand is the printed version of the Digital Vaccination Certificate with all related data and its QR code to scan the Vaccination Certificate.
+
+On the right hand are the `Proofs` in this case indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate. 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/
+lacpassVaccinationCertificateInformation.png)
 
 
 ## LACPass Verifier
