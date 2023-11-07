@@ -206,8 +206,7 @@ On the left hand is the printed version of the Digital Vaccination Certificate w
 
 On the right hand are the `Proofs` in this case indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate. 
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/
-lacpassVaccinationCertificateInformation.png)
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
 
 
 ## LACPass Verifier
