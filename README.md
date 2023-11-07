@@ -9,7 +9,7 @@ This manual describes the steps to run the LACPass-LACChain component, and speci
 ### Requirements
 - Internet access
 - Make sure you have up and running and instance of the LACPass-LACChain component part of `IPS-national-backend` available at https://github.com/RACSEL/IPS-national-backend
-- Access to the 'client-helper.sh` executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
+- Access to the `client-helper.sh` executable script available at https://github.com/lacchain/IPS-national-backend/blob/master/lacchain-setup-helper/client-helper.sh
 - [Postman](https://www.postman.com/) software
 
 ### Verify Service availability
@@ -121,7 +121,7 @@ Where:
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-## Setting up digital wallet patient/individual
+## Setting up digital wallet for patients/individuals
 
 ### Requirements
 
@@ -135,7 +135,7 @@ Please follow this steps to setup your LACPass digital wallet:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
 
-(In case you already registered you may enter your email and password as the wallet credentials to login.)
+(In case you already registered you may enter your email and password as the wallet credentials to login).
 
 2. If not registered, please click on the [register](https://lacpass-openprotest-wallet.lacchain.net/register) link that takes you to Create new account (registration) form:
 
@@ -145,17 +145,17 @@ Please follow this steps to setup your LACPass digital wallet:
 
 **Note:** After completing the registration information and you click on Create account the account data will be encrypted in the browser's local storage.
 
-After clicking Create account the following operations when creating an account will be displayed as shown:
+After clicking Create account the following operations are displayed as shown:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingNewAccountDID.png)
 
-- Generating a new DID
-- Registering Public Keys
-- Changing Controller
-- Signing LACChain ID Credential
-- Sending the LACChain ID Credential to the wallet
+a. Generating a new DID
+b. Registering Public Keys
+c. Changing Controller
+d. Signing LACChain ID Credential
+e. Auto-issuing the LACChain ID Credential in the wallet
 
-4. The user wallet once created looks like this with the LACChain ID Credential based on the user information registered:
+4. Once the user wallet is setup, the following LACChain ID Credential is displayed with the information registered by the user:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletUserLACChainIDHome.png)
 
@@ -163,12 +163,12 @@ After clicking Create account the following operations when creating an account 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredential.png)
 
-6. And the following view is presented with the LACChain ID Credential information as "Claims": **Id, givenName, familyName, and email**. 
+6. And the following LACChain ID Credential information is presented as `Claims`: **Id, givenName, familyName, and email**. 
 
-- The **Id** is the user DID, as seen in this example the DID value is: 
+- The **Id** is the (patient/individual) wallet user decentralized identifier [DID](https://w3c.github.io/did-core), as seen in this example the DID value is: 
 `did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
 
-- This DID value must be shared with your Health organization to issue and deliver the health credentials to the user wallet. 
+- This DID value must be shared with your Health organization to issue and deliver the health credentials to this user wallet. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
 
@@ -180,13 +180,21 @@ After clicking Create account the following operations when creating an account 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
-- Below the user name (which is blurred in the image) is the DID value, which can be copied clicking on the two blue buttons on the right side.
+- Below the user name (which is blurred in the image) is the DID value, which can also be copied by clicking on the two blue buttons on the right side.
 
-- This DID value must be shared with your Health organization to issue and deliver the health credentials to the user wallet. 
+- This DID value must be shared with your Health organization to issue and deliver the health credentials to this user wallet. 
 
 - To synchronize your digital wallet to receive issued credentials you may click the **Sync** button as displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
+
+9. Once you click on the **Sync** button the digital wallet will retrieve the issued health credentials in your digital wallet. As displayed the digital wallet now contains besides the LACChain ID Credential, a Vaccination Certificate.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificate.png)
+
+10. Please click on the Vaccination Certificate.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificateClick.png)
 
 
 ## LACPass Verifier
