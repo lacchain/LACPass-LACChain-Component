@@ -2,7 +2,7 @@
 
 ## Summary
 
-The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals. 
+The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals using digital wallets. 
 
 This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
@@ -188,7 +188,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 - The DID value of your digital wallet must be shared with your Health organization, in order to issue and deliver the health credentials to your digital wallet. 
 
-- To synchronize your digital wallet to receive issued credentials you may click the **Sync** button as displayed:
+- To synchronize your digital wallet to receive issued credentials click the **Sync** button as displayed:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
 
