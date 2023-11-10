@@ -121,7 +121,7 @@ Where:
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-## Setting up digital wallet for patients/individuals
+## Setting up hte digital wallet for patients/individuals
 
 ### Requirements
 
@@ -129,7 +129,7 @@ Where:
 - Web browser (Chrome, Firefox, Opera) desktop or mobile
 - Access to the digital wallet setup available at https://lacpass-openprotest-wallet.lacchain.net/
 
-Please follow this steps to setup your LACPass digital wallet:
+Please follow this steps to setup your LACPass digital wallet and receive your health certificates:
 
 1. On your first access to [LACPass digital wallet](https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
 
@@ -204,19 +204,19 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 On the left hand is the printed version of the Digital Vaccination Certificate with all related data and its QR code to scan the Vaccination Certificate.
 
-On the right hand under `LACPass-WHO-Vaccination Credential` three options of the Vaccination are available to click on:
+On the right hand under `LACPass-WHO-Vaccination Credential` there are three options of the Vaccination Certificate available to click on:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
 
-a) `Proofs` this proof indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate is a valid issuer.
+a) `Proofs` indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate is a valid issuer.
 
-b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate to the Root of the chain, in this case RACSEL.
+b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate (Ministry of Health -demo) up to the Root of the chain, in this case RACSEL.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 
 c) `Raw` displays the raw json structure and data of the vaccination certificate. 
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRaw.png)
 
 
 ## LACPass Verifier
