@@ -212,8 +212,7 @@ a) `Proofs` this proof indicates the DID of the Ministry of Health (LACPass demo
 
 b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate to the Root of the chain, in this case RACSEL.
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/
-lacpassVaccinationCertificateRootOfTrust.png)
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 
 c) `Raw` displays the raw json structure and data of the vaccination certificate. 
 
