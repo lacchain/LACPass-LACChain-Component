@@ -146,8 +146,54 @@ Por favor seguir los siguientes pasos para configurar su billetera digital y rec
 
 3. Por favor ingrese la siguiente información de **Usuario: primer nombre, primer apellido, segundo apellido** y **Cuenta: email (correo) y contraseña**
 
-**Nota:** 
+**Nota:** Una vez completada la información de registro y hacer click en `Create account` los datos de la cuenta serán encriptados en el almacenamiento local del browser (navegador).
 
+Al hacer click en `Create account` se muestran las siguientes operaciones:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/creatingNewAccountDID.png)
+
+a. Generando un nuevo DID
+
+b. Registrando las Llaves Públicas
+
+c. Modificando el Controlador
+
+d. Firmando la Credencial LACChain ID
+
+e. Auto-emitiendo la Credencial LACChain ID en la billetera
+
+4. Una vez la billetera esta configurada, contiene la siguiente Credencial LACChain ID con la información registrada por el usuario:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletUserLACChainIDHome.png)
+
+5. Haga click sobre la Credencial LACChain ID:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredential.png)
+
+6. La siguiente información de la Credencial LACChain es desplegada como `Claims`: **Id, Nombre, Apellido y correo electrónico**. 
+
+- El **Id** es el identificador decentralizado [DID](https://w3c.github.io/did-core) del usuario (paciente/individuo) en su billetera digital, en el siguiente ejemplo el valor del DID es: 
+`did:lac1:1iT5kyRRuZHYjW1HJfGyNgGbCcZqhuDJLco5N4PemXBjkFSzkgP3YdLRd5BHHGT7LccZ`
+
+- El valor del DID de su billetera digital debe ser compartido con su organización de Salud, para emitir y recibir las credenciales de salud en su billetera digital. 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
+
+7. Ahora, por favor haga click sobre el botón superior derecho (con el óvalo azul) que muestra el nombre del usuario de la billetera:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
+
+8. El siguiente menú se despliega: 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
+
+- Debajo del nombre de usuario (el cual está borroso en la imagen) es el valor del identificador DID, el cual puede ser copiado haciendo click en los dos botones azules a la derecha.
+
+- El valor del DID de su billetera digital debe ser compartido con su organización de Salud, para que puedan emitir y entregar las credenciales de salud a su billetera digital. 
+
+- Para sincronizar su billetera digital y recibir la credenciales de salud emitidas haga click en el botón **Sync** como se muestra:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
 
 ## Verificador LACPass
 

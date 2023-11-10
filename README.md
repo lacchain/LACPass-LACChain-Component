@@ -176,7 +176,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDID.png)
 
-7. Now, please click on the upper right button (with the blue oval) that displays the user name:
+7. Now, please click on the upper right button (with the blue oval) that displays the wallet user name:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
@@ -184,7 +184,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
-- Below the user name (which is blurred in the image) is the DID value, which can also be  to your DIDthe two blue buttons on the right side.
+- Below the user name (which is blurred in the image) is the DID value, which can also be copied clicking on the two blue buttons on the right side.
 
 - The DID value of your digital wallet must be shared with your Health organization, in order to issue and deliver the health credentials to your digital wallet. 
 
