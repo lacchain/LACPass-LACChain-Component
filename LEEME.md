@@ -132,7 +132,7 @@ Donde:
 - Web browser (Chrome, Firefox, Opera) desktop o móvil
 - Acceso a la configuración de la billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/
 
-Por favor seguir los siguientes pasos para configurar su billetera digital:
+Por favor seguir los siguientes pasos para configurar su billetera digital y recibir sus certificados de salud.
 
 1. Al acceder por primera vez a la billetera digital LACPass (https://lacpass-openprotest-wallet.lacchain.net/) la vista será la siguiente:
 
