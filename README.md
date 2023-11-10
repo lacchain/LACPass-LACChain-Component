@@ -208,9 +208,9 @@ On the right hand under `LACPass-WHO-Vaccination Credential` there are three opt
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
 
-a) `Proofs` indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate is a valid issuer.
+a) `Proofs` indicates the DID of the Ministry of Health - demo- LACPass who issued the Vaccination Certificate is a valid issuer.
 
-b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate (Ministry of Health -demo) up to the Root of the chain, in this case RACSEL.
+b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate (Ministry of Health - demo- LACPass) up to the chain root, in this case RACSEL.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 

@@ -213,7 +213,7 @@ Al lado derecho bajo `LACPass-WHO-Vaccination Credential` hay tres opciones del 
 
 a) `Proofs` indica que el identificador decentralizado (DID) del Ministerio de Salud (demo LACPass) quien emitió el Certificado de Vacunación es un emisor válido. 
 
-b) `Root of Trust` despliega la Cadena de Confianza desde el Emisor del Certificado de Vacunación (Ministry of Health -demo) hacia la raíz de la cadena de confianza, que es RACSEL en este caso. .
+b) `Root of Trust` despliega la Cadena de Confianza desde el Emisor del Certificado de Vacunación (Ministerio de Salud demo LACPass) hacia la raíz de la cadena de confianza, que es RACSEL en este caso.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 
