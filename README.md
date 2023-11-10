@@ -180,7 +180,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
-8. The following drop-down menu is presented: 
+8. The following drop-down menu is presented on the upper right side: 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
@@ -214,7 +214,7 @@ b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 
-c) `Raw` displays the raw vacci json structure and data of the vaccination certificate. 
+c) `Raw` displays the raw vaccination certificate data in a json structure. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRaw.png)
 

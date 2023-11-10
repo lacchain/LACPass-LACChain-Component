@@ -183,7 +183,7 @@ e. Auto-emitiendo la Credencial LACChain ID en la billetera
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightButton.png)
 
-8. El siguiente menú se despliega: 
+8. El siguiente menú se despliega en el lado superior derecho: 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
@@ -194,6 +194,33 @@ e. Auto-emitiendo la Credencial LACChain ID en la billetera
 - Para sincronizar su billetera digital y recibir la credenciales de salud emitidas haga click en el botón **Sync** como se muestra:
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
+
+9. Una vez haga clic en el botón **Sync** la billetera digital obtendrá las credenciales de salud emitidas a su DID. Como se muestra en la siguiente imagen, la billetera digital ahora contiene además de la Credencial LACChain ID, un Certificado de Vacunación.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificate.png)
+
+10. Por favor haga clic en el Certificado de Vacunación.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificateClick.png)
+
+11. Se despliega la siguiente información del Certificado de Vacunación. **Nota:** el certificado de salud es una Credencial de Vacunación LACPass-OMS.
+
+Al lado izquierdo se muestra la versión impresa del Certificado Digital de Vacunación con todos los datos relacionados y el código QR escaneable del Certificado de Vacunación.  
+
+Al lado derecho bajo `LACPass-WHO-Vaccination Credential` hay tres opciones del Certificado de Vacunación para hacer clic:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
+
+a) `Proofs` indica que el identificador decentralizado (DID) del Ministerio de Salud (demo LACPass) quien emitió el Certificado de Vacunación es un emisor válido. 
+
+b) `Root of Trust` despliega la Cadena de Confianza desde el Emisor del Certificado de Vacunación (Ministry of Health -demo) hacia la raíz de la cadena de confianza, que es RACSEL en este caso. .
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
+
+c) `Raw` despliega los datos del certificado de vacunación en una estructura json. 
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRaw.png)
+
 
 ## Verificador LACPass
 
