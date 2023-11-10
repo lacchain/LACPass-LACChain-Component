@@ -184,7 +184,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenu.png)
 
-- Below the user name (which is blurred in the image) is the DID value, which can also be copied by clicking on the two blue buttons on the right side.
+- Below the user name (which is blurred in the image) is the DID value, which can also be  to your DIDthe two blue buttons on the right side.
 
 - The DID value of your digital wallet must be shared with your Health organization, in order to issue and deliver the health credentials to your digital wallet. 
 
@@ -192,7 +192,7 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialDIDUpperRightMenuSync.png)
 
-9. Once you click on the **Sync** button the digital wallet will retrieve the issued health credentials in your digital wallet. As displayed the digital wallet now contains besides the LACChain ID Credential, a Vaccination Certificate.
+9. Once you click on the **Sync** button the digital wallet will retrieve the health credentials issued to your DID. As displayed the digital wallet now contains besides the LACChain ID Credential, a Vaccination Certificate.
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassLACChainIDCredentialVaccinationCertificate.png)
 
@@ -204,7 +204,18 @@ e. Auto-issuing the LACChain ID Credential in the wallet
 
 On the left hand is the printed version of the Digital Vaccination Certificate with all related data and its QR code to scan the Vaccination Certificate.
 
-On the right hand are the `Proofs` in this case indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate. 
+On the right hand under `LACPass-WHO-Vaccination Credential` three options of the Vaccination are available to click on:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
+
+a) `Proofs` this proof indicates the DID of the Ministry of Health (LACPass demo) who issued the Vaccination Certificate is a valid issuer.
+
+b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination Certificate to the Root of the chain, in this case RACSEL.
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/
+lacpassVaccinationCertificateRootOfTrust.png)
+
+c) `Raw` displays the raw json structure and data of the vaccination certificate. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateInformation.png)
 
