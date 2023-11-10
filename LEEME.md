@@ -124,7 +124,32 @@ Donde:
 
 **Nota:** Un ejemplo completo con el payload requerido está disponible en https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-### Verificador LACPass
+## Configurando la billetera digital para pacientes/individuos
+
+### Requerimientos
+
+- Acceso a Internet
+- Web browser (Chrome, Firefox, Opera) desktop o móvil
+- Acceso a la configuración de la billetera digital disponible en https://lacpass-openprotest-wallet.lacchain.net/
+
+Por favor seguir los siguientes pasos para configurar su billetera digital:
+
+1. Al acceder por primera vez a la billetera digital LACPass (https://lacpass-openprotest-wallet.lacchain.net/) la vista será la siguiente:
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
+
+(En caso que se encuentre registrado puede ingresar su correo y password como credenciales de login en la billetera).
+
+2. De no estar registrado, por favor haga click en el enlace [register](https://lacpass-openprotest-wallet.lacchain.net/register) que le lleva al formulario de Creación de cuenta (registro):
+
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletRegistration.png)
+
+3. Por favor ingrese la siguiente información de **Usuario: primer nombre, primer apellido, segundo apellido** y **Cuenta: email (correo) y contraseña**
+
+**Nota:** 
+
+
+## Verificador LACPass
 
 El componente verificador LACPass permite verificar los certificados de salud conformes a la especificación DDCC. Este componente contiene dos subcomponentes:
 
