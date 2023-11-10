@@ -121,7 +121,7 @@ Where:
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-## Setting up hte digital wallet for patients/individuals
+## Setting up the digital wallet for patients/individuals
 
 ### Requirements
 
@@ -129,7 +129,7 @@ Where:
 - Web browser (Chrome, Firefox, Opera) desktop or mobile
 - Access to the digital wallet setup available at https://lacpass-openprotest-wallet.lacchain.net/
 
-Please follow this steps to setup your LACPass digital wallet and receive your health certificates:
+Please follow this steps to setup your LACPass digital wallet and receive your health certificates.
 
 1. On your first access to [LACPass digital wallet](https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
 
@@ -214,7 +214,7 @@ b) `Root of Trust` displays the Root of Trust from the Issuer of the Vaccination
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRootOfTrust.png)
 
-c) `Raw` displays the raw json structure and data of the vaccination certificate. 
+c) `Raw` displays the raw vacci json structure and data of the vaccination certificate. 
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassVaccinationCertificateRaw.png)
 
