@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud gestionar su incorporación en la red de confianza LACPass, y los habilita para emitir y enviar certificados de salud a pacientes o individuos. 
+El componente de software LACPass-LACChain permite a los Ministerios u Organizaciones de Salud de un País gestionar su incorporación en la red de confianza LACPass, y los empodera como **Emisores** para emitir y enviar certificados de salud a pacientes o individuos. 
 
 Este manual describe los pasos para ejecutar el componente LACPass-LACChain y especifica como usar los endpoints del servicio.
 

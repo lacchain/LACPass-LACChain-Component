@@ -2,7 +2,7 @@
 
 ## Summary
 
-The LACCPass-LACChain component enables Health Ministries or Health Organizations to manage their onboarding on the LACPass trust network, empowering them to issue and deliver health certificates to patients or individuals using digital wallets. 
+The LACCPass-LACChain component enables Health Ministries/Organizations of Countries to manage their onboarding on the LACPass trust network, empowering them as **Issuers**, to issue and deliver health certificates to patients or individuals using digital wallets. 
 
 This manual describes the steps to run the LACPass-LACChain component, and specifies how to use the endpoints.
 
