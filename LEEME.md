@@ -134,6 +134,8 @@ Donde:
 
 Por favor seguir los siguientes pasos para configurar su billetera digital y recibir sus certificados de salud.
 
+1. Al acceder por primera vez a la [billetera digital LACPass](https://lacpass-openprotest-wallet.lacchain.net/) la vista es la siguiente:
+
 (En caso que se encuentre registrado puede ingresar su correo y password como credenciales de login en la billetera)
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
