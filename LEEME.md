@@ -124,7 +124,7 @@ Donde:
 
 **Nota:** Un ejemplo completo con el payload requerido está disponible en https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-## Configurando la billetera digital para pacientes/individuos
+## Configurando la billetera digital para Individiuos/Pacientes
 
 ### Requerimientos
 
@@ -134,11 +134,9 @@ Donde:
 
 Por favor seguir los siguientes pasos para configurar su billetera digital y recibir sus certificados de salud.
 
-1. Al acceder por primera vez a la billetera digital LACPass (https://lacpass-openprotest-wallet.lacchain.net/) la vista será la siguiente:
+(En caso que se encuentre registrado puede ingresar su correo y password como credenciales de login en la billetera)
 
 ![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
-
-(En caso que se encuentre registrado puede ingresar su correo y password como credenciales de login en la billetera).
 
 2. De no estar registrado, por favor haga click en el enlace [register](https://lacpass-openprotest-wallet.lacchain.net/register) que le lleva al formulario de Creación de cuenta (registro):
 
@@ -146,7 +144,7 @@ Por favor seguir los siguientes pasos para configurar su billetera digital y rec
 
 3. Por favor ingrese la siguiente información de **Usuario: primer nombre, primer apellido, segundo apellido** y **Cuenta: email (correo) y contraseña**
 
-**Nota:** Una vez completada la información de registro y hacer click en `Create account` los datos de la cuenta serán encriptados en el almacenamiento local del browser (navegador).
+**Nota:** Una vez completada la información de registro y hacer click en `Create account` los datos de la cuenta serán encriptados en el almacenamiento local del browser.
 
 Al hacer click en `Create account` se muestran las siguientes operaciones:
 

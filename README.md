@@ -121,7 +121,7 @@ Where:
 
 **NOTE:** A full example with the required payload is available at https://github.com/lacchain/LACPass-client/blob/master/docs/Credential-Sending.md
 
-## Setting up the digital wallet for patients/individuals
+## Setting up the digital wallet for Individuals/Patients
 
 ### Requirements
 
@@ -133,9 +133,9 @@ Please follow this steps to setup your LACPass digital wallet and receive your h
 
 1. On your first access to [LACPass digital wallet](https://lacpass-openprotest-wallet.lacchain.net/) you will  be presented with a screen like this:
 
-![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
+(In case you already registered you may enter your email and password as the wallet credentials to login)
 
-(In case you already registered you may enter your email and password as the wallet credentials to login).
+![](https://github.com/lacchain/LACPass-LACChain-Component/blob/main/examples/lacpassWalletLanding.png)
 
 2. If not registered, please click on the [register](https://lacpass-openprotest-wallet.lacchain.net/register) link that takes you to Create new account (registration) form:
 
